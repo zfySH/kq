@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/fragment_person__title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="缴费"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_bar_font_size" />
+
+        <Button
+            android:id="@+id/abc_fragment_person__btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/top_bar_normal_bg"
+            android:drawableLeft="@drawable/mm_title_back"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="@dimen/top_bar_font_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/light_backgroung"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="输入金额"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/content"
+                    android:layout_width="150dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/choose_part"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioGroup
+                        android:id="@+id/fight_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                    </RadioGroup>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/arron"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow_icon"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="选择队员"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/content"
+                    android:layout_width="150dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="选择/输入"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/choose_part"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioGroup
+                        android:id="@+id/fight_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                    </RadioGroup>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/arron"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow_icon" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="缴费时间"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/content"
+                    android:layout_width="150dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/choose_part"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioGroup
+                        android:id="@+id/fight_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                    </RadioGroup>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/arron"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow_icon" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="缴费类型"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/content"
+                    android:layout_width="150dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/choose_part"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioGroup
+                        android:id="@+id/fight_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/team_fight_type_selector"
+                            android:button="@null"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/abc_account_zfb"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/team_fight_type_selector"
+                            android:button="@null"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/abc_account_xianjin"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/team_fight_type_selector"
+                            android:button="@null"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/abc_account_weixin"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/team_fight_type_selector"
+                            android:button="@null"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/abc_account_bank"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/arron"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow_icon"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg" >
+
+        <TextView
+            android:id="@+id/fragment_person__title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="数据"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_bar_font_size" />
+    </RelativeLayout>
+
+    <com.viewpagerindicator.TabPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:background="@color/line"
+          android:paddingBottom="6dp"
+          android:paddingTop="6dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/abc_fragment_data.xml -->

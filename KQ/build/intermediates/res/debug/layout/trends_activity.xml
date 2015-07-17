@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg" >
+
+        <include layout="@layout/abc_include_back_btn" />
+
+        <TextView
+            android:id="@+id/fragment_person__title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的动态"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_bar_font_size" />
+
+    </RelativeLayout>
+
+    <cn.kangeqiu.kq.refresh.PullToRefreshView
+        android:id="@+id/main_pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white" >
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/ll_main"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="#ffffff"
+                android:divider="@color/transparent"
+                android:orientation="vertical" />
+        </ScrollView>
+    </cn.kangeqiu.kq.refresh.PullToRefreshView>
+
+</LinearLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/trends_activity.xml -->

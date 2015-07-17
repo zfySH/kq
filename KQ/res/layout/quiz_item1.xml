@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical"
+     >
+
+    <TextView
+        android:id="@+id/btn_fifty"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:text="50豆"
+        android:textColor="@color/text_color1"
+        android:textSize="14dip" 
+        android:clickable="false"
+        android:gravity="center"
+        android:focusable="false"
+        />
+
+</RelativeLayout>

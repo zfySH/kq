@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF" >
+
+   
+    <ImageView
+        android:id="@+id/abc_personal_activity_listview__iv_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="10dp"/>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/abc_personal_activity_listview__tv_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="主题"
+            android:textColor="#626466"
+            android:textSize="16sp" />
+       
+        <LinearLayout
+        android:id="@+id/abc_fragment_nearby__listview__ll_middle_new"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp" >
+
+        <ImageView
+            android:id="@+id/abc_fragment_nearby__listview__iv_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+           
+            android:background="@drawable/abc_activity_time"
+            android:contentDescription="@string/image_desc" />
+
+        <TextView
+            android:id="@+id/abc_personal_activity_listview__tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:paddingBottom="0dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="0dp"
+            android:text="活动时间"
+            android:textColor="#626466"
+            android:textSize="14sp" />
+    </LinearLayout>
+    </LinearLayout>
+
+    
+
+</LinearLayout>

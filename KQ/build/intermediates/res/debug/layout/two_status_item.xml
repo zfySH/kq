@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tiao"
+            android:layout_width="5dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="#DFDEE3" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:paddingTop="5dip" 
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/emptycircle" >
+        </ImageView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingTop="5dip" 
+        android:paddingBottom="5dip">
+
+        <TextView
+            android:id="@+id/two_status_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="#999999" >
+        </TextView>
+        
+        <TextView
+            android:id="@+id/two_complete_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#999999" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/two_status_item.xml -->

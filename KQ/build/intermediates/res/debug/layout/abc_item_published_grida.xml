@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="false" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_margin="10dp" >
+
+        <ImageView
+            android:id="@+id/item_grida_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:focusable="false"
+            android:scaleType="centerCrop"
+           />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/img_delete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:layout_alignTop="@+id/relativeLayout1"
+        android:background="@null"
+        android:focusable="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_delete" />
+
+</RelativeLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/abc_item_published_grida.xml -->

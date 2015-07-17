@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+        <include layout="@layout/abc_include_back_btn" />
+
+        <TextView
+            android:id="@+id/abc_team__title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_bar_font_size" />
+    </RelativeLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <!-- <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_margin="10dp"
+            android:background="#DADBDA" />
+
+        <RelativeLayout
+            android:id="@+id/rl_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/tx_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:clickable="false"
+                android:text="消息提醒"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/abc_arron_right" />
+        </RelativeLayout> -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_margin="10dp"
+            android:background="#DADBDA" />
+
+        <RelativeLayout
+            android:id="@+id/rl_feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/tx_feedback"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:clickable="false"
+                android:text="意见反馈"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/abc_arron_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_margin="10dp"
+            android:background="#DADBDA" />
+
+    
+        <LinearLayout
+            android:id="@+id/ll_exit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/txt_logoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:clickable="false"
+                android:text="退出登录"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_margin="10dp"
+            android:background="#DADBDA" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/setting_item.xml -->

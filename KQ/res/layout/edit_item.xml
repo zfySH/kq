@@ -1,0 +1,237 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+        <include layout="@layout/abc_include_back_btn" />
+
+        <Button
+            android:id="@+id/abc_team__btn_save"
+            android:layout_width="@dimen/height_top_bar"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentRight="true"
+            android:background="@color/top_bar_normal_bg"
+            android:text="保存"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/abc_team__title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="编辑信息"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_bar_font_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rel_top1"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/top_bar_normal_bg"
+            android:gravity="center_vertical" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_top2"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@id/rel_top1"
+            android:background="#fff"
+            android:gravity="center_vertical" >
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/abc_faceimg"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dip"
+            android:layout_marginLeft="18dip"
+            android:layout_marginRight="18dip"
+            android:contentDescription="@string/image_desc"
+            android:padding="5dp"
+            app:border_color="@android:color/transparent"
+            app:border_width="0.2dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rel_top"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/name_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/player_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:text="呢称"
+                android:textColor="@color/text_color1"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/arron_name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="请输入"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_margin="5dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/sex_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/player_number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:text="性别"
+                android:textColor="@color/text_color1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/arron_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="请选择"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_margin="5dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/age_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/player_number2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:text="年龄"
+                android:textColor="@color/text_color1"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/arron_age"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="请输入"
+                android:inputType="number"
+                android:maxLength="3"
+                android:padding="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_margin="5dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/domicile_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/player_number3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:text="居住地"
+                android:textColor="@color/text_color1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/arron_domicile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:hint="请选择"
+                android:padding="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_margin="5dp"
+            android:background="@color/line" />
+    </LinearLayout>
+
+</RelativeLayout>

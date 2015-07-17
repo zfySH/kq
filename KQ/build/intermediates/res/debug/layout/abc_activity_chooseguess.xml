@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_common_bg" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg" >
+
+        <include layout="@layout/abc_include_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发起竞猜"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_bar_font_size" />
+
+        <Button
+            android:id="@+id/sure_TextView"
+            android:layout_width="46dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawableRight="@drawable/share"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/share_ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentRight="true"
+            android:onClick="OnShare"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/share"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/abc_button_roundcorner_chuiniu" >
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:onClick="OnReduce" >
+
+                <ImageView
+                    android:id="@+id/reduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/reduce_guess" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="@color/top_bar_normal_bg" />
+
+            <EditText
+                android:id="@+id/et_price"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:inputType="number"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:singleLine="true"
+                android:text="50"
+                android:textColor="@color/text_color" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="@color/top_bar_normal_bg" />
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:onClick="OnAdd" >
+
+                <ImageView
+                    android:id="@+id/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/add_guess" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/abc_button_roundcorner_create"
+            android:paddingBottom="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:text="投注"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_add"
+        android:layout_below="@+id/top" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" >
+
+            <LinearLayout
+                android:id="@+id/wcrel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/match_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:padding="5dp"
+                        android:text="亚冠"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/referenceQuestions_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dip"
+                        android:padding="5dp"
+                        android:text="自定义赔率"
+                        android:textColor="#868687"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="10dp" >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/team1_icon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp" />
+
+                        <TextView
+                            android:id="@+id/team1_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_team1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/abc_button_roundcorner_chuiniu"
+                            android:gravity="center_horizontal"
+                            android:onClick="Team1win"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="5dp" >
+
+                            <TextView
+                                android:id="@+id/team1_win_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/text_color"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:gravity="center"
+                            android:text="VS"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_none"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/abc_button_roundcorner_chuiniu"
+                            android:gravity="center_horizontal"
+                            android:onClick="Nonewin"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="5dp" >
+
+                            <TextView
+                                android:id="@+id/team_none_win_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/text_color"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="10dp" >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/team2_icon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp" />
+
+                        <TextView
+                            android:id="@+id/team2_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_team2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/abc_button_roundcorner_chuiniu"
+                            android:gravity="center_horizontal"
+                            android:onClick="Team2win"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="5dp" >
+
+                            <TextView
+                                android:id="@+id/team2_win_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/text_color"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dzrel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wcrel"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/dz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:padding="5dp"
+                        android:text="可投积分数"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/referenceBet_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dip"
+                        android:padding="5dp"
+                        android:text="参考赌注"
+                        android:textColor="#868687"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/team1_win_sum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/none_win_sum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/team2_win_sum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_report"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dzrel"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/abc_activity_chooseguess.xml -->

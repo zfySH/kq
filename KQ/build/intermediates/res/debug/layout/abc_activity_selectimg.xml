@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_backgroung"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/top_bar_normal_bg"
+            android:drawableLeft="@drawable/mm_title_back"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" 
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/top_bar_normal_bg"
+            android:text="删除"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_bar_font_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="相册"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_bar_font_size" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="@dimen/top_bar_font_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:text="选择"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/noScrollgridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:horizontalSpacing="3dp"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp"
+        android:layout_marginTop="5dp" >
+    </GridView>
+
+</LinearLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/abc_activity_selectimg.xml -->

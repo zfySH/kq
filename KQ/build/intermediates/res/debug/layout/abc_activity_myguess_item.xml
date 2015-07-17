@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/match_name_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/new_common_bg"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:textColor="@color/text_color" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="5dp"
+        android:background="#e9e9e9" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/team_icon1"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/team_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#8A8A8A"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="VS"
+                android:textColor="@color/text_color1"
+                android:textSize="14sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/team_icon2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/team_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#8A8A8A"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/team_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="未开奖"
+            android:textColor="@color/text_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/lin3"
+        android:background="@color/line" />
+
+</LinearLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/abc_activity_myguess_item.xml -->

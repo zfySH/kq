@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF7FA"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/abc_team__btn_back"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/top_bar_normal_bg"
+            android:drawableLeft="@drawable/mm_title_back"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/abc_team__title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="竞猜"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_bar_font_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="100dp"
+        android:background="#E2E7EB"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+
+        <TextView
+            android:id="@+id/abc_team__title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:text="竞猜"
+            android:textColor="#FF9A42"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/abc_team__title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="选择要压的积分数量"
+            android:textColor="@color/text_color1"
+            android:textSize="15sp" />
+
+        <GridView
+            android:id="@+id/grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:numColumns="3"
+            android:verticalSpacing="15dp" 
+            android:horizontalSpacing="15dp">
+        </GridView>
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:gravity="center_horizontal"
+            android:layout_margin="15dp">
+
+           
+
+            <Button
+                android:id="@+id/btn_fifty"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="50豆"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="14sp" 
+                android:background="#FF9A42"/>
+
+          <Button
+                android:id="@+id/btn_hundred"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="100豆"
+                android:layout_weight="1"
+                android:textColor="@color/text_color1"
+                android:textSize="14sp" 
+                android:background="@color/white"
+                android:layout_marginLeft="20dp"/>
+
+           <Button
+                android:id="@+id/btn_two_hundred"
+              android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="200豆"
+                android:layout_weight="1"
+                android:textColor="@color/text_color1"
+                android:textSize="14sp" 
+                android:background="@color/white"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_marginLeft="15dp"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="15dp">
+
+            <Button
+                android:id="@+id/btn_finhundred"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="500豆"
+                android:layout_weight="1"
+                android:textColor="@color/text_color1"
+                android:textSize="14sp" 
+                android:background="@color/white"/>
+
+          <Button
+                android:id="@+id/btn_thousand"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="1000豆"
+                android:layout_weight="1"
+                android:textColor="@color/text_color1"
+                android:textSize="14sp" 
+                android:background="@color/white"
+                android:layout_marginLeft="20dp"/>
+
+           <Button
+                android:id="@+id/btn_two_thousand"
+               android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="2000豆"
+                android:layout_weight="1"
+                android:textColor="@color/text_color1"
+                android:textSize="14sp" 
+                android:background="@color/white"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        -->
+
+        <TextView
+            android:id="@+id/abc_team__title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="每次竞猜只能投一次"
+            android:textColor="#686A6D"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="#8E8C8D"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_cathectic"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="#FF9A42"
+                android:text="投注"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

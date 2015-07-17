@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/abc_main_bottom_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="1dip" >
+
+        <Button
+            android:id="@+id/Hotline"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/team_item_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="动态"
+            android:textColor="@color/text_color1"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/On_the_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/team_item_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="上榜"
+            android:textColor="@color/text_color1"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/exercise"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/team_item_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="活动"
+            android:textColor="@color/text_color1"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/Ranking"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:background="@drawable/team_item_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="房间"
+            android:textColor="@color/text_color1"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

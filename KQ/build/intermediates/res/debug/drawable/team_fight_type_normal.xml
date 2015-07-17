@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="#FFFFFF" />
+
+    <corners
+        android:bottomLeftRadius="3dp"
+        android:bottomRightRadius="3dp"
+        android:topLeftRadius="3dp"
+        android:topRightRadius="3dp" />
+
+    <stroke
+        android:width="0.5dp"
+        android:color="#43A034" />
+
+</shape><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/drawable/team_fight_type_normal.xml -->

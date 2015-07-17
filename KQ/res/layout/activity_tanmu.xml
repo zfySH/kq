@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tanmu_bg" >
+
+    <RelativeLayout
+        android:id="@+id/rl_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="Send"
+            android:text="发送" />
+
+        <EditText
+            android:id="@+id/ed_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/send" />
+    </RelativeLayout>
+
+    <master.flame.danmaku.ui.widget.DanmakuView
+        android:id="@+id/sv_danmaku"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_comment" />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/abc_fragment_nearby__listview__iv_faceimg"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/image_desc"
+            android:padding="5dp"
+            app:border_color="@android:color/transparent"
+            app:border_width="0.2dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/txt_reply"
+            android:layout_toRightOf="@+id/abc_fragment_nearby__listview__iv_faceimg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color1" />
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:text="0"
+            android:textColor="@color/text_color" />
+    </RelativeLayout>
+
+</LinearLayout>

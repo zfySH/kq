@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/abc_fragment_team__tab"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/abc_button_roundcorner_green1"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <!-- 消息提示点 -->
+
+        <LinearLayout
+            android:id="@+id/rel_income"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#44CDD7"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/txt_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="积分"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#44CDD7" />
+
+        <LinearLayout
+            android:id="@+id/rel_expend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/txt_expend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="射手榜"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/txt_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="球队"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/txt_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="积分"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/txt_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/txt_integral"
+            android:text="进/失"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/txt_fu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:layout_toLeftOf="@+id/txt_out"
+            android:text="负"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/txt_ping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/txt_fu"
+            android:text="平"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/txt_sheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/txt_ping"
+            android:text="胜"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/txt_sai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/txt_sheng"
+            android:text="轮次"
+            android:textColor="@color/text_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/top1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/txt_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="球员"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/txt_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="进球"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/txt_team1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:text="球队"
+            android:textColor="@color/text_color" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/transparent"
+            android:dividerHeight="0.5dp"
+            android:fadingEdge="none"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="vertical"
+            android:scrollbars="none" >
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/integral_view.xml -->

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF"
+    android:paddingRight="10dp" >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/abc_face"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        app:border_color="#FFd2d2d2"
+        app:border_width="0.8dp" />
+
+    <ImageView
+        android:id="@+id/abc_fragment_nearby__listview__iv_activity_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/image_desc" />
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/creater_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:clickable="false"
+            android:src="@drawable/add_concern" />
+
+        <LinearLayout
+            android:id="@+id/abc_fragment_nearby__listview__ll_name_and_gps_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="12dp" >
+
+            <TextView
+                android:id="@+id/abc_player_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="0dp"
+                android:singleLine="true"
+                android:text="主题"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/abc_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="0dp"
+                android:singleLine="true"
+                android:text="主题"
+                android:textColor="#959595"
+                android:textSize="14sp" />
+
+            
+        </LinearLayout>
+
+        <!--
+        <LinearLayout
+            android:id="@+id/abc_fragment_nearby__listview__ll_middle_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="11dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp" >
+
+            <Button
+                android:id="@+id/abc_btn_sex_age"
+                android:layout_width="45dip"
+                android:layout_height="22dip"
+                android:background="@drawable/abc_button_roundcorner_yellow"
+                android:clickable="false"
+                android:drawableLeft="@drawable/abc_sex_man"
+                android:focusable="false"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="1dp"
+                android:paddingTop="0dp"
+                android:text="24"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/abc_place"
+                android:layout_width="45dip"
+                android:layout_height="22dip"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/abc_button_roundcorner_dark_green"
+                android:clickable="false"
+                android:focusable="false"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="1dp"
+                android:paddingTop="0dp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+        </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:id="@+id/abc_fragment_nearby__listview__ll_activity_creator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="0dp"
+            android:visibility="gone" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/abc_team_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip" />
+
+            <TextView
+                android:id="@+id/abc_team_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="0dp"
+                android:text="rf"
+                android:textColor="#626466"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

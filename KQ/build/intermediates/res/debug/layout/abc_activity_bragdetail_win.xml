@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_common_bg" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg" >
+
+        <include layout="@layout/abc_include_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="吹牛"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_bar_font_size" />
+
+        <ImageView
+            android:id="@+id/share_ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/share" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bragDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:background="@drawable/abc_button_roundcorner_white2"
+        android:orientation="vertical"
+        android:paddingBottom="15dp" >
+
+        <LinearLayout
+            android:id="@+id/penson_lin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/abc_fragment_person__iv_person"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="15dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/text_color1"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_below="@+id/penson_lin"
+            android:background="#e9e9e9" />
+
+        <ImageView
+            android:id="@+id/my_win"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/my_win" />
+
+        <LinearLayout
+            android:id="@+id/penson_lin1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/abc_fragment_person__iv_person1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:src="@drawable/my_chuiniu" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="赌注："
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_bet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/text_color1"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bragDetail"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abc_button_roundcorner_white2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/btn_win"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="0人参与了"
+            android:textColor="@color/text_color"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/abc_activity_bragdetail_win.xml -->

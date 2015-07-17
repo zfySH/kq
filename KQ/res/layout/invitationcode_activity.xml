@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray_bg" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg" >
+
+        <include layout="@layout/commom_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="邀请码"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_bar_font_size" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:hint="请输入房间邀请码"
+        android:padding="10dp"
+        android:textColor="@color/text_color"
+        android:textSize="15sp" />
+    <!-- android:onClick="onAdd" -->
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/abc_button_roundcorner_blue"
+        android:onClick="onAdd"
+        android:text="加入房间"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

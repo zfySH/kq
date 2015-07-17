@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/abc_activity_register_second__title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg" >
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/common_tab_bg"
+            android:onClick="back" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="9dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/mm_title_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="输入新密码"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/abc_activity_register_second__iv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_account" />
+
+            <TextView
+                android:id="@+id/abc_activity_register_second__tv_username"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="11dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:singleLine="true"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp" >
+
+            <ImageView
+                android:id="@+id/abc_activity_register_second__iv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/abc_pwd_icon2" />
+
+            <EditText
+                android:id="@+id/abc_activity_register_second__et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:layout_toRightOf="@id/abc_activity_register_second__iv_password"
+                android:background="@null"
+                android:hint="6-20位密码，仅限字母或数字"
+                android:inputType="textPassword"
+                android:numeric="integer"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#b3b3b3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp" >
+
+            <ImageView
+                android:id="@+id/abc_activity_register_second__iv_captcha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/abc_pwd_icon1" />
+
+            <LinearLayout
+                android:id="@+id/message_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" >
+
+                <Button
+                    android:id="@+id/get_message_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/abc_button_roundcorner_light_yellow"
+                    android:onClick="getCaptcha"
+                    android:text="获取验证码"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/time_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/abc_button_roundcorner_light_yellow"
+                    android:clickable="false"
+                    android:text="50"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/abc_activity_register_second__et_captcha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:layout_toLeftOf="@id/message_lay"
+                android:layout_toRightOf="@id/abc_activity_register_second__iv_captcha"
+                android:background="@null"
+                android:hint="验证码"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@id/message_lay"
+                android:background="#b3b3b3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/abc_activity_register_second__iv_password2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_pwd" />
+
+            <EditText
+                android:id="@+id/abc_activity_register_second__et_password2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:layout_toRightOf="@id/abc_activity_register_second__iv_password2"
+                android:background="@null"
+                android:hint="请确认密码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#b3b3b3" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/abc_login_bt_bg"
+                android:onClick="save"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="下一步"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

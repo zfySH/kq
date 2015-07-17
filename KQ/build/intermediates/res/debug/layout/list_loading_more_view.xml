@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jingyi.MiChat.widget.recyclerview.MCLoadingMoreView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_item_selector"
+    android:orientation="horizontal"
+    android:padding="@dimen/length_13">
+    <com.jingyi.MiChat.widget.progressbar.CircleProgressBar 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar"/>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zhengzai_jiazai"
+        android:textColor="@color/main_text"
+        android:textSize="@dimen/textsize_12"/>
+</com.jingyi.MiChat.widget.recyclerview.MCLoadingMoreView><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/list_loading_more_view.xml -->

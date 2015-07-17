@@ -1,0 +1,453 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发起活动"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_bar_font_size" />
+
+        <include layout="@layout/abc_include_back_btn" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:drawableRight="@drawable/abc_save"
+            android:onClick="save" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/main_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:baselineAligned="false"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/personal_game"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/type_btn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null" />
+
+                <EditText
+                    android:id="@+id/subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="25dp"
+                    android:background="@null"
+                    android:hint="请输入"
+                    android:textColor="@color/black_deep" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="80dp"
+                android:background="#DADBDA" />
+
+            <LinearLayout
+                android:id="@+id/pop_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_game"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/pick_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:baselineAligned="false"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/abc_activity_time" />
+
+                    <TextView
+                        android:id="@+id/abc_personal_activity_create__et_start_time"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="80dp"
+                        android:layout_toLeftOf="@id/arron"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="开始时间"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/arron"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/abc_arron_right" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="80dp"
+                    android:background="#DADBDA" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:baselineAligned="false"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/end_time" />
+
+                    <ImageView
+                        android:id="@+id/arron"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/abc_arron_down" />
+
+                    <Spinner
+                        android:id="@+id/abc_personal_activity_create__sp_duration"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="80dp"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_color" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="80dp"
+                    android:background="#DADBDA" />
+
+                <RelativeLayout
+                    android:id="@+id/pick_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:baselineAligned="false"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/abc_match_address_icon" />
+
+                    <!--
+                     <Button
+                    android:id="@+id/abc_personal_activity_create__btn_select_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="地图"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+                    -->
+
+                    <ImageView
+                        android:id="@+id/arron"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/abc_arron_right" />
+
+                    <TextView
+                        android:id="@+id/abc_personal_activity_create__et_address"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="80dp"
+                        android:layout_toLeftOf="@id/arron"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="活动地点"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#DADBDA" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/light_gray_bg"
+                    android:gravity="center"
+                    android:text="更多设置"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#DADBDA" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:baselineAligned="false" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/abc_match_type" />
+
+                    <ImageView
+                        android:id="@+id/arron"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/abc_arron_down" />
+
+                    <Spinner
+                        android:id="@+id/abc_personal_activity_create__sp_match_type"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="80dp"
+                        android:background="@null"
+                        android:textColor="@color/text_color" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="80dp"
+                    android:background="#DADBDA" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:baselineAligned="false" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/abc_activity_fee_type" />
+
+                    <ImageView
+                        android:id="@+id/arron"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/abc_arron_down" />
+
+                    <Spinner
+                        android:id="@+id/abc_personal_activity_create__sp_fee_type"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="80dp"
+                        android:background="@null"
+                        android:textColor="@color/text_color" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="80dp"
+                    android:background="#DADBDA" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:baselineAligned="false"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/abc_activity_phone" />
+
+                    <EditText
+                        android:id="@+id/abc_personal_activity_create__et_contact_telephone"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="80dp"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入联系方式"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="80dp"
+                    android:background="#DADBDA" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:baselineAligned="false"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/abc_activity_money" />
+
+                    <EditText
+                        android:id="@+id/abc_personal_activity_create__et_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="80dp"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入总费用"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="80dp"
+                    android:background="#DADBDA" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false" >
+
+                    <ImageView
+                        android:id="@+id/instruction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/abc_activity_instruction" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/instruction"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="25dp"
+                            android:text="活动介绍"
+                            android:textColor="@color/text_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/abc_personal_activity_create__et_remark"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/abc_create_roundcorner_instruction"
+                            android:focusable="true"
+                            android:gravity="left"
+                            android:hint="请输入详细信息"
+                            android:minLines="7"
+                            android:textColor="@color/text_color"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/abc_create_activity.xml -->

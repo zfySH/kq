@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_grida_radio"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/team_fight_type_selector"
+    android:button="@null"
+    android:padding="5dp"
+    android:textColor="@color/black_deep"
+    android:textSize="12sp" >
+
+</RadioButton><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/abc_item_fight_fee.xml -->

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_common_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg" >
+
+        <include layout="@layout/abc_include_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="比赛"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_bar_font_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/important"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="关注"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="全部"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/cursor_important"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="@color/top_bar_normal_bg" />
+
+            <ImageView
+                android:id="@+id/cursor_all"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="@color/trans" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/abc_fragment_team__ll_fragmentlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/new_common_bg"
+        android:orientation="horizontal" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vPager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/abc_activity_aboutmatch.xml -->

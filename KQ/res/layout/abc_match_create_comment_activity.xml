@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/abc_personal_activity_create__et_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发状态"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_bar_font_size" />
+
+        <include layout="@layout/abc_include_back_btn" />
+
+        <Button
+            android:id="@+id/abc_activity__btn_action"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@color/top_bar_normal_bg"
+            android:drawableRight="@drawable/geng"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentRight="true"
+            android:background="@color/top_bar_normal_bg"
+            android:onClick="Upload"
+            android:padding="10dp"
+            android:text="发布"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <cn.kangeqiu.kq.activity.view.ResizeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top" >
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dip"
+            android:background="@null"
+            android:hint="分享新鲜事..."
+            android:maxLines="3"
+            android:minHeight="40dp"
+            android:onClick="onEdit"
+            android:padding="10dp"
+            android:textSize="18sp" />
+
+        <GridView
+            android:id="@+id/photo_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="5dp"
+            android:descendantFocusability="blocksDescendants"
+            android:fadeScrollbars="true"
+            android:focusable="false"
+            android:horizontalSpacing="3dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp" >
+        </GridView>
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1sp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp" >
+
+                <Button
+                    android:id="@+id/upload_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/abc_match_upload_photo"
+                    android:onClick="PickPhoto" />
+
+                <Button
+                    android:id="@+id/iv_emoticons_checked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/img_biaoqing"
+                    android:onClick="EmoticonsChecked" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <!-- 表情图片 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_face_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/line" />
+            </LinearLayout>
+        </LinearLayout>
+    </cn.kangeqiu.kq.activity.view.ResizeLayout>
+
+</RelativeLayout>

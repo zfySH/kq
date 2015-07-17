@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_date_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/new_common_bg"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="5-66"
+                android:textColor="#8A8A8A"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/match_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="比赛"
+                android:textColor="#6B6B6B"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_number "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="0人参与"
+                android:textColor="#6B6B6B"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/show_score"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/team_icon1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/team_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#8A8A8A"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12:00"
+                        android:textColor="#8A8A8A"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/img_live"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_live"
+                        android:textColor="@color/text_color"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/all_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#8A8A8A"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/img_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/img_uncollect"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:padding="5dp"
+                    android:textColor="@color/text_color" />
+
+                <LinearLayout
+                    android:id="@+id/lay_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/txt_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color1"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="@color/text_color1"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/txt_score1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color1"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/channel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="CCTV5"
+                    android:textColor="#8A8A8A"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/joins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/light_orange"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/team_icon2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/team_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#8A8A8A"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/jingcai"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/abc_button_roundcorner_jingcai"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/abc_jingcai"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txt_quiz"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shangbang"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line" />
+
+                <LinearLayout
+                    android:id="@+id/shangbang1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/abc_button_roundcorner_shangbang"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/abc_shangbang"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txt_onthelist"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/toupiao"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/abc_button_roundcorner_toupiao"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/abc_toupiao"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txt_toupiao"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <Button
+                    android:id="@+id/img_support_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/abc_button_roundcorner_link"
+                    android:gravity="center"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:text="支持"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/img_support_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/abc_button_roundcorner_link"
+                    android:gravity="center"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:text="支持"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/img_support_blue"
+                    android:layout_toRightOf="@id/img_support_red"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/left_progress"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/support_left"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/right_progress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/support_right"
+                        android:gravity="right"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/support1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="3dp"
+                        android:clickable="true"
+                        android:text="+1"
+                        android:textColor="@color/orangered"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/support2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="3dp"
+                        android:clickable="true"
+                        android:text="+1"
+                        android:textColor="@color/orangered"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/line" />
+
+        <!--
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/abc_button_roundcorner_orange2"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="2dp"
+                    android:text="支持"
+                    android:textColor="@color/text_color"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/txt_support_red"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:background="#CF191D"
+                    android:text="40%" 
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_support_blue"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="#CF191D"
+                android:text="40%" 
+                android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/img_support_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/abc_button_roundcorner_orange2"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="2dp"
+                    android:text="支持"
+                    android:textColor="@color/text_color"
+                    android:textSize="26px" 
+                    android:layout_alignParentRight="true"/>
+        
+        </RelativeLayout>
+        -->
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/abc_fragment_match_item.xml -->

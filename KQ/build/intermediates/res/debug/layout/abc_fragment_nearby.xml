@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/abc_fragment_nearby__title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="@string/abc_fragment_nearby__title"
+        android:textColor="@android:color/white"
+        android:background="@color/top_bar_normal_bg"
+        android:textSize="@dimen/top_bar_font_size" />
+
+
+    <ListView
+        android:id="@+id/android:list" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#DADBDA"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none" />
+
+</LinearLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/abc_fragment_nearby.xml -->

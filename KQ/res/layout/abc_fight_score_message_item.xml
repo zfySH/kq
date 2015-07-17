@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/player_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_my_empty" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="12"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gole"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/gole_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:hint="请输入"
+                android:inputType="number"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/assit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/assit_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:hint="请输入"
+                android:inputType="number"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

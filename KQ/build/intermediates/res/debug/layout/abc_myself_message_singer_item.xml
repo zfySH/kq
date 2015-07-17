@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <RadioButton
+                android:id="@+id/man"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableRight="@drawable/radio_selector"
+                android:padding="15dp"
+                android:text="男"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <RadioButton
+                android:id="@+id/woman"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableRight="@drawable/radio_selector"
+                android:padding="15dp"
+                android:text="女"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/abc_myself_message_singer_item.xml -->

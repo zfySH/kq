@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/abc_fragment_nearby_popwin__ll_popmenu"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#D9D9D9"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <Button
+        android:id="@+id/abc_btn_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abc_button_roundcorner_white"
+        android:text="发起活动"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/abc_btn_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abc_button_roundcorner_white"
+        android:text="编辑信息"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/abc_btn_manager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abc_button_roundcorner_white"
+        android:text="球员管理"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/abc_btn_match"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abc_button_roundcorner_white"
+        android:text="发起挑战"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/abc_btn_exit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abc_button_roundcorner_white"
+        android:text="退出球队"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/abc_btn_private_letter"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abc_button_roundcorner_white"
+        android:text="私信"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/abc_btn_cancel_attention"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abc_button_roundcorner_white"
+        android:text="取消关注"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/abc_btn_exit_login"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abc_button_roundcorner_white"
+        android:text="退出登录"
+        android:textColor="#EC5051"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/abc_btn_man"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abc_button_roundcorner_white"
+        android:text="男"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/abc_btn_girl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abc_button_roundcorner_white"
+        android:text="女"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/item_popupwindows_camera"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abc_button_roundcorner_white"
+        android:text="拍照"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/item_popupwindows_Photo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abc_button_roundcorner_white"
+        android:text="相册"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/abc_btn_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abc_button_roundcorner_deep_gray"
+        android:text="取消"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+</LinearLayout>

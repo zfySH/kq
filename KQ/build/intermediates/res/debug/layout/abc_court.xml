@@ -1,0 +1,399 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+         <include layout="@layout/abc_include_back_btn" /> 
+        <!--
+             <Button
+            android:id="@+id/abc_court__btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/top_bar_normal_bg"
+            android:drawableLeft="@drawable/mm_title_back"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+        -->
+
+        <TextView
+            android:id="@+id/abc_person__tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/abc_court__title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_bar_font_size" />
+
+        <Button
+            android:id="@+id/abc_person__btn_action"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentRight="true"
+            android:background="@color/top_bar_normal_bg"
+            android:text="@string/abc_person__btn_action"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+        
+        
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical" >
+            
+
+            <RelativeLayout
+                android:id="@+id/top_lay"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:baselineAligned="false" 
+                 android:background="@drawable/abc_court_top_bg">
+
+                <ImageView
+                    android:id="@+id/top_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                   
+                    android:scaleType="fitXY" />  
+                
+                
+
+                <ImageView
+                    android:id="@+id/court_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/abc_star_0"
+                    android:contentDescription="@string/image_desc" />
+
+                <TextView
+                    android:id="@+id/court_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/court_star"
+                    android:singleLine="true"
+                    android:text="足球场名称"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/abc_fragment_nearby__listview__btn_xiangpian"
+                    android:layout_width="75dip"
+                    android:layout_height="20dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/court_star"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/abc_button_roundcorner_link"
+                    android:text="更多照片"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/abc_fragment_account__tab"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#DADBDA"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <RadioGroup
+                    android:id="@+id/court_group"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_summary"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/team_item_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="简介"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_activity"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/team_item_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="活动"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                     android:id="@+id/lay_address_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:padding="9dip" >
+
+                    <ImageButton
+                        android:id="@+id/address_icon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:src="@drawable/abc_match_address_icon" />
+
+                    <TextView
+                        android:id="@+id/abc_tx_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#626466"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#DADBDA" />
+
+                <LinearLayout
+                     android:id="@+id/lay_phone_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:padding="9dip" >
+
+                    <ImageButton
+                        android:id="@+id/phone_btn"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:src="@drawable/abc_match_phone_icon" />
+
+                    <TextView
+                        android:id="@+id/abc_tx_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#626466"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#DADBDA" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:baselineAligned="false"
+                    android:orientation="vertical"
+                    android:padding="9dip" >
+
+                    <!-- <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="场地介绍"
+                        android:textColor="@color/black_deep"
+                        android:textSize="16sp" /> -->
+
+                    <TextView
+                        android:id="@+id/abc_court_instruction"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#444444"
+                        android:textSize="14sp"
+                        android:text="df" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:baselineAligned="false"
+                    android:orientation="vertical"
+                    android:padding="9dip"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开放时间"
+                        android:textColor="@color/black_deep"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/abc_open_time"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:baselineAligned="false"
+                    android:orientation="vertical"
+                    android:padding="9dip"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="其他联系方式"
+                        android:textColor="@color/black_deep"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/abc_court_other_phone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/abc_person_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="#0BA683"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/abc_court_photo"
+            android:gravity="center"
+            android:text="拍照"
+            android:textColor="#FDFEFE"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/abc_court_mark"
+            android:gravity="center"
+            android:text="点评"
+            android:textColor="#FDFEFE"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/abc_court_error"
+            android:gravity="center"
+            android:text="报错"
+            android:textColor="#FDFEFE"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/abc_court_share"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="#FDFEFE"
+            android:textSize="12sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/lay_phone_btn1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#3FA22B"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="电话预定"
+            android:textColor="#FEFCFE"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/abc_court.xml -->

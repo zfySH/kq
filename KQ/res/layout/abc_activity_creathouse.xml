@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_common_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg" >
+
+        <include layout="@layout/abc_include_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="创建房间"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_bar_font_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:text="下一步"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_create"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/abc_button_roundcorner_uncreate"
+        android:clickable="false" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/abc_enter_hourse" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="进入房间"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/rl_create"
+        android:layout_below="@id/top" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="20dip"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:id="@+id/name_rel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="名称"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/creatHouseName_EditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="#B0B1B2"
+                    android:textColorHint="#B0B1B2"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <TextView
+                android:id="@+id/tishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:text="*不少于4个字"
+                android:textColor="#F2394C"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="5dip"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:id="@+id/aboutMatch_Rel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff" >
+
+                <TextView
+                    android:id="@+id/tx_match_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dip"
+                    android:text="球赛"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/abc_arron_right" />
+
+                <LinearLayout
+                    android:id="@+id/show_score"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tx_match_name"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/team_icon1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:id="@+id/team_name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#8A8A8A"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="12:00"
+                                android:textColor="#8A8A8A"
+                                android:textSize="14sp"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/img_live"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/img_live"
+                                android:textColor="@color/text_color"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/all_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#8A8A8A"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lay_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/txt_score1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/text_color1"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=":"
+                                android:textColor="@color/text_color1"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/txt_score2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/text_color1"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/channel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="CCTV5"
+                            android:textColor="#8A8A8A"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/joins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/light_orange"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/team_icon2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:id="@+id/team_name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#8A8A8A"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="25dp"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:id="@+id/aboutMatch_Rel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff" >
+
+                <TextView
+                    android:id="@+id/tx_member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="20dp"
+                    android:text="成员"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <cn.kangeqiu.kq.activity.view.MyGridView
+                    android:id="@+id/noScrollgridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tx_member"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="5dp"
+                    android:descendantFocusability="blocksDescendants"
+                    android:fadeScrollbars="true"
+                    android:horizontalSpacing="3dp"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:verticalSpacing="5dp" >
+                </cn.kangeqiu.kq.activity.view.MyGridView>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

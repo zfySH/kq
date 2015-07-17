@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_part"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/u_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:text="头像"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/arron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/abc_arron" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/abc_fragment_person__iv_person"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_toLeftOf="@+id/arron"
+        android:contentDescription="@string/image_desc"
+        android:layout_margin="3dp"
+       />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.nowagame.tq8"
+    android:id="@+id/abc_sys_msg__listview__rl_area"
+    android:layout_width="match_parent"
+    android:layout_height="59dp"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:padding="2dp" >
+
+    <RelativeLayout
+        android:id="@+id/abc_sys_msg__listview__rl_avatar_container"
+        android:layout_width="59dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true" >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/abc_sys_msg__listview__iv_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:contentDescription="@string/image_desc" />
+
+        <TextView
+            android:id="@+id/abc_sys_msg__listview__tv_unread_flag"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/unread_count_bg"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/abc_sys_msg__listview__tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/abc_sys_msg__listview__rl_avatar_container"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/abc_sys_msg__listview__tv_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/abc_sys_msg__listview__tv_title"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/abc_sys_msg__listview__rl_avatar_container"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="关注了你"
+        android:textColor="#afafaf"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/abc_sys_msg__listview__tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="8dp"
+        android:text="2014-01-01"
+        android:textColor="#afafaf"
+        android:textSize="10sp"
+        android:visibility="gone" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#ECECEC" 
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/abc_sys_msg_listview.xml -->

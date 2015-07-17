@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF"
+    android:paddingRight="10dp" >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/abc_fragment_nearby__listview__iv_faceimg_new"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="18dip"
+        android:layout_marginRight="18dip"
+        android:layout_marginTop="10dip"
+        app:border_color="@android:color/transparent"
+        app:border_width="0dp" 
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:id="@+id/abc_fragment_nearby__listview__iv_activity_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/image_desc" 
+         android:background="@android:color/transparent"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/abc_fragment_nearby__listview__ll_name_and_gps_new"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="12dp" >
+
+            <TextView
+                android:id="@+id/abc_fragment_nearby_listview__tv_name_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="0dp"
+                android:singleLine="true"
+                android:text="主题"
+                android:textColor="#626466"
+                android:textSize="18sp" 
+                android:maxEms="10"/>
+
+            <Button
+                android:id="@+id/abc_fragment_nearby__listview__btn_team_member_count_new"
+                android:layout_width="55dip"
+                android:layout_height="25dip"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@id/abc_fragment_nearby_listview__tv_name_new"
+                android:background="@drawable/abc_button_roundcorner_orange"
+                android:clickable="false"
+                android:focusable="false"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="1dp"
+                android:paddingTop="0dp"
+                android:text="32人"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/abc_fragment_nearby__listview__btn_activity_wait_response"
+                android:layout_width="wrap_content"
+                android:layout_height="25dip"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@id/abc_fragment_nearby_listview__tv_name_new"
+                android:background="@drawable/abc_button_roundcorner_orange2"
+                android:clickable="false"
+                android:focusable="false"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="1dp"
+                android:paddingTop="0dp"
+                android:text="等待应战"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/abc_fragment_nearby__listview__btn_gps_dis_new"
+                android:layout_width="wrap_content"
+                android:layout_height="22dip"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="0.12km"
+                android:textColor="#626466"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/abc_fragment_nearby__listview__ll_middle_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="0dp" >
+
+            <Button
+                android:id="@+id/abc_fragment_nearby__listview__btn_sex_age_new"
+                android:layout_width="55dp"
+                android:layout_height="25dip"
+                android:background="@drawable/abc_button_roundcorner_yellow"
+                android:clickable="false"
+                android:drawableLeft="@drawable/abc_sex_man"
+                android:focusable="false"
+                android:paddingBottom="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:paddingTop="0dp"
+                android:text="24"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/abc_fragment_nearby__listview__btn_place_new"
+                android:layout_width="wrap_content"
+                android:layout_height="25dip"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/abc_button_roundcorner_orange"
+                android:clickable="false"
+                android:focusable="false"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="1dp"
+                android:paddingTop="0dp"
+                android:text="边锋"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+     
+
+            <Button
+                android:id="@+id/abc_fragment_nearby__listview__btn_team_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="25dip"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/abc_button_roundcorner_green"
+                android:clickable="false"
+                android:focusable="false"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:text="边锋"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:visibility="visible" 
+                />
+
+            <ImageView
+                android:id="@+id/abc_fragment_nearby__listview__iv_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/abc_activity_time"
+                android:contentDescription="@string/image_desc" />
+
+            <TextView
+                android:id="@+id/abc_fragment_nearby__listview__tv_match_name_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="0dp"
+                android:text="活动时间"
+                android:textColor="#626466"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/abc_fragment_nearby__listview__iv_court_star_new"
+                android:layout_width="80dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/abc_star_0"
+                android:contentDescription="@string/image_desc" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/abc_fragment_nearby__listview__ll_activity_creator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="0dp" >
+
+            <ImageView
+                android:id="@+id/abc_fragment_nearby__listview__iv_activity_creator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/abc_activity_creator"
+                android:contentDescription="@string/image_desc"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:id="@+id/abc_fragment_nearby__listview__tv_activity_creator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:text=""
+                android:textColor="#626466"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/abc_fragment_nearby__listview__ll_bottom_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="0dp" >
+
+            <ImageView
+                android:id="@+id/abc_fragment_nearby__listview__iv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/abc_activity_address"
+                android:contentDescription="@string/image_desc" 
+                android:layout_marginTop="3dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/abc_fragment_nearby__listview__iv_person_team_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="2dip"
+                app:border_color="#FFd2d2d2"
+                app:border_width="0.8dp" 
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/abc_fragment_nearby__listview__iv_player_team_name_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="3dp"
+                android:paddingTop="5dp"
+                android:text="001"
+                android:layout_gravity="center_vertical"
+                android:textColor="#626466"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/abc_fragment_nearby__listview__iv_court_addr_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="001"
+                android:textColor="#626466"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/abc_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="001"
+                android:textColor="#626466"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/abc_fragment_nearby__listview__iv_team_place_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:singleLine="true"
+                android:text="球场"
+                android:textColor="#626466"
+                android:textSize="14sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/abc_fragment_nearby__listview__ll_activity_extras"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#FFDDDDDD"
+                android:clickable="false"
+                android:padding="5dp" />
+
+            <LinearLayout
+                android:id="@+id/abc_fragment_nearby__listview__ll_activity_extra_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/abc_fragment_nearby__listview__iv_activity_membercount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:drawableLeft="@drawable/abc_activity_member"
+                    android:gravity="center|left"
+                    android:text="10"
+                    android:textColor="#626466"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/abc_fragment_nearby__listview__iv_activity_bbscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:drawableLeft="@drawable/abc_activity_bbs"
+                    android:gravity="center|left"
+                    android:text="0"
+                    android:textColor="#626466"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/abc_fragment_nearby__listview__iv_activity_locate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:drawableLeft="@drawable/abc_activity_locate"
+                    android:gravity="center|left"
+                    android:text="10"
+                    android:textColor="#626466"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

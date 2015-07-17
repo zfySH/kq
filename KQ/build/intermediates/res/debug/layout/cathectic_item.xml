@@ -1,0 +1,349 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/abc_team__btn_back"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/top_bar_normal_bg"
+            android:drawableLeft="@drawable/mm_title_back"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/abc_team__title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="竞猜"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_bar_font_size" />
+
+        <TextView
+            android:id="@+id/abc_team__share "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="分享"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_bar_font_size"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/share_ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentRight="true"
+            android:onClick="OnShare"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/share" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="visible" >
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btn_save"
+            android:background="@drawable/abc_button_roundcorner_link"
+            android:padding="10dp"
+            android:textColor="@color/text_color1" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#5CCC46"
+            android:padding="8dp"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <cn.kangeqiu.kq.refresh.PullToRefreshView
+        android:id="@+id/main_pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/rel_save"
+        android:layout_below="@id/top"
+        android:background="@android:color/white" >
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadingEdge="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/rel_main1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/abc_button_roundcorner_white"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <RelativeLayout
+                        android:id="@+id/player_btn1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:clickable="true" >
+
+                        <TextView
+                            android:id="@+id/quiz_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:clickable="false"
+                            android:paddingTop="1dp"
+                            android:textColor="@color/text_color1"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/quiz_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:clickable="false"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btn_quiz"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/abc_button_roundcorner_lost"
+                        android:gravity="center"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="已投注"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/rel_main2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:visibility="visible" >
+
+                        <Button
+                            android:id="@+id/btn_quiz1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/abc_button_roundcorner_orange"
+                            android:gravity="center"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:text="投票"
+                            android:textColor="@color/white"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/btn_quiz2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/abc_button_roundcorner_orange"
+                            android:gravity="center"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:text="投票"
+                            android:textColor="@color/white"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/btn_quiz3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/abc_button_roundcorner_orange"
+                            android:gravity="center"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:text="投票"
+                            android:textColor="@color/white"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rel_main3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <Button
+                            android:id="@+id/btn_quiz4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/abc_button_roundcorner_orange"
+                            android:gravity="center"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:text="投票"
+                            android:textColor="@color/white"
+                            android:visibility="visible" />
+
+                        <Button
+                            android:id="@+id/btn_quiz5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/abc_button_roundcorner_orange"
+                            android:gravity="center"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:text="投票"
+                            android:textColor="@color/white"
+                            android:visibility="visible" />
+
+                        <Button
+                            android:id="@+id/btn_quiz6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/abc_button_roundcorner_orange"
+                            android:gravity="center"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:text="投票"
+                            android:textColor="@color/white"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/player_content1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:clickable="false"
+                            android:paddingTop="1dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/player_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:clickable="false"
+                            android:paddingTop="1dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_margin="10dp"
+                    android:background="#DADBDA" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_vote1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="评论"
+                        android:textColor="@color/text_color1" />
+
+                    <TextView
+                        android:id="@+id/txt_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/text_color1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_margin="10dp"
+                    android:background="#DADBDA" />
+
+                <LinearLayout
+                    android:id="@+id/list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </ScrollView>
+    </cn.kangeqiu.kq.refresh.PullToRefreshView>
+
+</RelativeLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/cathectic_item.xml -->

@@ -1,0 +1,1224 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	xmlns:tools
+		ADDED from AndroidManifest.xml:3:5
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+	package
+		ADDED from AndroidManifest.xml:4:5
+	android:versionName
+		ADDED from AndroidManifest.xml:6:5
+	android:versionCode
+		ADDED from AndroidManifest.xml:5:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-sdk
+ADDED from AndroidManifest.xml:8:5
+MERGED from kq3:TanmuLib:unspecified:7:5
+	android:targetSdkVersion
+		ADDED from AndroidManifest.xml:10:9
+	android:minSdkVersion
+		ADDED from AndroidManifest.xml:9:9
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:14:5
+	android:name
+		ADDED from AndroidManifest.xml:14:22
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from AndroidManifest.xml:16:5
+	android:name
+		ADDED from AndroidManifest.xml:16:22
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from AndroidManifest.xml:18:5
+	android:name
+		ADDED from AndroidManifest.xml:18:22
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:20:5
+	android:name
+		ADDED from AndroidManifest.xml:20:22
+uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:22:5
+	android:name
+		ADDED from AndroidManifest.xml:22:22
+uses-permission#android.permission.GET_TASKS
+ADDED from AndroidManifest.xml:24:5
+	android:name
+		ADDED from AndroidManifest.xml:24:22
+uses-permission#android.permission.VIBRATE
+ADDED from AndroidManifest.xml:25:5
+	android:name
+		ADDED from AndroidManifest.xml:25:22
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from AndroidManifest.xml:26:5
+	android:name
+		ADDED from AndroidManifest.xml:26:22
+uses-permission#android.permission.CAMERA
+ADDED from AndroidManifest.xml:27:5
+	android:name
+		ADDED from AndroidManifest.xml:27:22
+uses-permission#android.permission.ACCESS_MOCK_LOCATION
+ADDED from AndroidManifest.xml:28:5
+	android:name
+		ADDED from AndroidManifest.xml:28:22
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from AndroidManifest.xml:29:5
+	android:name
+		ADDED from AndroidManifest.xml:29:22
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from AndroidManifest.xml:30:5
+	android:name
+		ADDED from AndroidManifest.xml:30:22
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from AndroidManifest.xml:31:5
+	android:name
+		ADDED from AndroidManifest.xml:31:22
+uses-permission#android.permission.WAKE_LOCK
+ADDED from AndroidManifest.xml:32:5
+	android:name
+		ADDED from AndroidManifest.xml:32:22
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from AndroidManifest.xml:33:5
+	android:name
+		ADDED from AndroidManifest.xml:33:22
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from AndroidManifest.xml:34:5
+	android:name
+		ADDED from AndroidManifest.xml:34:22
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from AndroidManifest.xml:35:5
+	android:name
+		ADDED from AndroidManifest.xml:35:22
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from AndroidManifest.xml:36:5
+	android:name
+		ADDED from AndroidManifest.xml:36:22
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from AndroidManifest.xml:37:5
+	android:name
+		ADDED from AndroidManifest.xml:37:22
+uses-permission#android.permission.AUTHENTICATE_ACCOUNTS
+ADDED from AndroidManifest.xml:38:5
+	android:name
+		ADDED from AndroidManifest.xml:38:22
+uses-permission#com.android.launcher.permission.READ_SETTINGS
+ADDED from AndroidManifest.xml:39:5
+	android:name
+		ADDED from AndroidManifest.xml:39:22
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from AndroidManifest.xml:40:5
+	android:name
+		ADDED from AndroidManifest.xml:40:22
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from AndroidManifest.xml:41:5
+	android:name
+		ADDED from AndroidManifest.xml:41:22
+uses-permission#android.permission.CALL_PHONE
+ADDED from AndroidManifest.xml:42:5
+	android:name
+		ADDED from AndroidManifest.xml:42:22
+application
+ADDED from AndroidManifest.xml:44:5
+MERGED from kq3:TanmuLib:unspecified:11:5
+	android:label
+		ADDED from AndroidManifest.xml:49:9
+	android:allowBackup
+		ADDED from AndroidManifest.xml:46:9
+	android:icon
+		ADDED from AndroidManifest.xml:47:9
+		REJECTED from kq3:TanmuLib:unspecified:13:9
+	android:theme
+		ADDED from kq3:TanmuLib:unspecified:15:9
+	tools:replace
+		ADDED from AndroidManifest.xml:48:9
+	android:name
+		ADDED from AndroidManifest.xml:45:9
+activity#com.medicine.app.fragments.FragmentChangeActivity
+ADDED from AndroidManifest.xml:50:9
+	android:name
+		ADDED from AndroidManifest.xml:50:19
+activity#cn.kangeqiu.kq.activity.SplashActivity
+ADDED from AndroidManifest.xml:52:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:54:13
+	android:theme
+		ADDED from AndroidManifest.xml:55:13
+	android:name
+		ADDED from AndroidManifest.xml:53:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER+cn.kangeqiu.kq.activity.SplashActivity
+ADDED from AndroidManifest.xml:56:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:57:17
+	android:name
+		ADDED from AndroidManifest.xml:57:25
+action#cn.kangeqiu.kq.activity.SplashActivity
+ADDED from AndroidManifest.xml:58:17
+	android:name
+		ADDED from AndroidManifest.xml:58:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:59:17
+	android:name
+		ADDED from AndroidManifest.xml:59:27
+activity#cn.kangeqiu.kq.activity.MainActivity
+ADDED from AndroidManifest.xml:62:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:65:13
+	android:theme
+		ADDED from AndroidManifest.xml:66:13
+	android:name
+		ADDED from AndroidManifest.xml:63:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:64:13
+activity#cn.kangeqiu.kq.activity.InvitationcodeActivity
+ADDED from AndroidManifest.xml:70:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:72:13
+	android:theme
+		ADDED from AndroidManifest.xml:73:13
+	android:name
+		ADDED from AndroidManifest.xml:71:13
+activity#cn.kangeqiu.kq.activity.LoginActivity
+ADDED from AndroidManifest.xml:76:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:80:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:78:13
+	android:theme
+		ADDED from AndroidManifest.xml:79:13
+	android:name
+		ADDED from AndroidManifest.xml:77:13
+activity#cn.kangeqiu.kq.activity.MessageActivity
+ADDED from AndroidManifest.xml:82:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:84:13
+	android:theme
+		ADDED from AndroidManifest.xml:85:13
+	android:name
+		ADDED from AndroidManifest.xml:83:13
+activity#com.nowagame.kq.activity.MineActivity
+ADDED from AndroidManifest.xml:87:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:89:13
+	android:theme
+		ADDED from AndroidManifest.xml:90:13
+	android:name
+		ADDED from AndroidManifest.xml:88:13
+activity#com.nowagme.football.PhotoActivity
+ADDED from AndroidManifest.xml:92:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:94:13
+	android:theme
+		ADDED from AndroidManifest.xml:95:13
+	android:name
+		ADDED from AndroidManifest.xml:93:13
+activity#com.nowagme.football.HelpActivity
+ADDED from AndroidManifest.xml:97:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:99:13
+	android:theme
+		ADDED from AndroidManifest.xml:100:13
+	android:name
+		ADDED from AndroidManifest.xml:98:13
+activity#com.nowagme.football.Respondcomment
+ADDED from AndroidManifest.xml:102:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:104:13
+	android:theme
+		ADDED from AndroidManifest.xml:105:13
+	android:name
+		ADDED from AndroidManifest.xml:103:13
+activity#cn.kangeqiu.kq.activity.RegisterActivity
+ADDED from AndroidManifest.xml:108:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:110:13
+	android:theme
+		ADDED from AndroidManifest.xml:111:13
+	android:name
+		ADDED from AndroidManifest.xml:109:13
+activity#cn.kangeqiu.kq.activity.MyselfMessageActivity
+ADDED from AndroidManifest.xml:114:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:116:13
+	android:theme
+		ADDED from AndroidManifest.xml:117:13
+	android:name
+		ADDED from AndroidManifest.xml:115:13
+activity#cn.kangeqiu.kq.activity.MyselfMessageDetailActivity
+ADDED from AndroidManifest.xml:120:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:122:13
+	android:theme
+		ADDED from AndroidManifest.xml:123:13
+	android:name
+		ADDED from AndroidManifest.xml:121:13
+activity#cn.kangeqiu.kq.activity.MyselfPhotosActivity
+ADDED from AndroidManifest.xml:126:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:128:13
+	android:theme
+		ADDED from AndroidManifest.xml:129:13
+	android:name
+		ADDED from AndroidManifest.xml:127:13
+activity#cn.kangeqiu.kq.activity.TeamDetailActivity
+ADDED from AndroidManifest.xml:132:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:134:13
+	android:theme
+		ADDED from AndroidManifest.xml:135:13
+	android:name
+		ADDED from AndroidManifest.xml:133:13
+activity#cn.kangeqiu.kq.activity.TeamFightActivity
+ADDED from AndroidManifest.xml:138:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:140:13
+	android:theme
+		ADDED from AndroidManifest.xml:141:13
+	android:name
+		ADDED from AndroidManifest.xml:139:13
+activity#cn.kangeqiu.kq.activity.TeamPickFightDateActivity
+ADDED from AndroidManifest.xml:144:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:146:13
+	android:theme
+		ADDED from AndroidManifest.xml:147:13
+	android:name
+		ADDED from AndroidManifest.xml:145:13
+activity#cn.kangeqiu.kq.activity.TeamMatchTypeActivity
+ADDED from AndroidManifest.xml:150:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:152:13
+	android:theme
+		ADDED from AndroidManifest.xml:153:13
+	android:name
+		ADDED from AndroidManifest.xml:151:13
+activity#com.nowagme.football.SeetingActivity
+ADDED from AndroidManifest.xml:156:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:158:13
+	android:theme
+		ADDED from AndroidManifest.xml:159:13
+	android:name
+		ADDED from AndroidManifest.xml:157:13
+activity#com.nowagme.football.QuizActivity
+ADDED from AndroidManifest.xml:162:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:164:13
+	android:theme
+		ADDED from AndroidManifest.xml:165:13
+	android:name
+		ADDED from AndroidManifest.xml:163:13
+activity#com.nowagme.football.CathecticActivity
+ADDED from AndroidManifest.xml:167:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:169:13
+	android:theme
+		ADDED from AndroidManifest.xml:170:13
+	android:name
+		ADDED from AndroidManifest.xml:168:13
+activity#com.nowagme.football.VoteActivity
+ADDED from AndroidManifest.xml:173:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:175:13
+	android:theme
+		ADDED from AndroidManifest.xml:176:13
+	android:name
+		ADDED from AndroidManifest.xml:174:13
+activity#com.nowagme.football.EditfileActivity
+ADDED from AndroidManifest.xml:179:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:181:13
+	android:theme
+		ADDED from AndroidManifest.xml:182:13
+	android:name
+		ADDED from AndroidManifest.xml:180:13
+activity#com.nowagme.football.EditfileActivity1
+ADDED from AndroidManifest.xml:184:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:186:13
+	android:theme
+		ADDED from AndroidManifest.xml:187:13
+	android:name
+		ADDED from AndroidManifest.xml:185:13
+activity#cn.kangeqiu.kq.activity.CreateTeamActivity
+ADDED from AndroidManifest.xml:190:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:192:13
+	android:theme
+		ADDED from AndroidManifest.xml:193:13
+	android:name
+		ADDED from AndroidManifest.xml:191:13
+activity#cn.kangeqiu.kq.activity.EditTeamActivity
+ADDED from AndroidManifest.xml:196:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:198:13
+	android:theme
+		ADDED from AndroidManifest.xml:199:13
+	android:name
+		ADDED from AndroidManifest.xml:197:13
+activity#cn.kangeqiu.kq.activity.CreateTeamTagActivity
+ADDED from AndroidManifest.xml:203:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:205:13
+	android:theme
+		ADDED from AndroidManifest.xml:206:13
+	android:name
+		ADDED from AndroidManifest.xml:204:13
+activity#cn.kangeqiu.kq.activity.CreateTeamCityActivity
+ADDED from AndroidManifest.xml:209:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:211:13
+	android:theme
+		ADDED from AndroidManifest.xml:212:13
+	android:name
+		ADDED from AndroidManifest.xml:210:13
+activity#cn.kangeqiu.kq.activity.FriendsActivity
+ADDED from AndroidManifest.xml:215:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:219:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:217:13
+	android:theme
+		ADDED from AndroidManifest.xml:218:13
+	android:name
+		ADDED from AndroidManifest.xml:216:13
+activity#cn.kangeqiu.kq.activity.ConfigActivity
+ADDED from AndroidManifest.xml:222:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:224:13
+	android:theme
+		ADDED from AndroidManifest.xml:225:13
+	android:name
+		ADDED from AndroidManifest.xml:223:13
+activity#cn.kangeqiu.kq.activity.TeamScoreEditActivity
+ADDED from AndroidManifest.xml:228:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:230:13
+	android:theme
+		ADDED from AndroidManifest.xml:231:13
+	android:name
+		ADDED from AndroidManifest.xml:229:13
+activity#cn.kangeqiu.kq.activity.TeamScoreManagerActivity
+ADDED from AndroidManifest.xml:234:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:236:13
+	android:theme
+		ADDED from AndroidManifest.xml:237:13
+	android:name
+		ADDED from AndroidManifest.xml:235:13
+activity#cn.kangeqiu.kq.activity.TeamAccountActivity
+ADDED from AndroidManifest.xml:240:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:242:13
+	android:theme
+		ADDED from AndroidManifest.xml:243:13
+	android:name
+		ADDED from AndroidManifest.xml:241:13
+activity#cn.kangeqiu.kq.activity.TeamAccountPayActivity
+ADDED from AndroidManifest.xml:247:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:249:13
+	android:theme
+		ADDED from AndroidManifest.xml:250:13
+	android:name
+		ADDED from AndroidManifest.xml:248:13
+activity#cn.kangeqiu.kq.activity.TeamAccountOutPayActivity
+ADDED from AndroidManifest.xml:254:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:256:13
+	android:theme
+		ADDED from AndroidManifest.xml:257:13
+	android:name
+		ADDED from AndroidManifest.xml:255:13
+activity#cn.kangeqiu.kq.activity.TeamAccountManagerActivity
+ADDED from AndroidManifest.xml:260:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:262:13
+	android:theme
+		ADDED from AndroidManifest.xml:263:13
+	android:name
+		ADDED from AndroidManifest.xml:261:13
+activity#cn.kangeqiu.kq.activity.TeamCreatImgActivity
+ADDED from AndroidManifest.xml:267:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:269:13
+	android:theme
+		ADDED from AndroidManifest.xml:270:13
+	android:name
+		ADDED from AndroidManifest.xml:268:13
+activity#cn.kangeqiu.kq.activity.ChatActivity
+ADDED from AndroidManifest.xml:274:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:279:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:277:13
+	android:theme
+		ADDED from AndroidManifest.xml:278:13
+	android:name
+		ADDED from AndroidManifest.xml:275:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:276:13
+activity#cn.kangeqiu.kq.activity.AddContactActivity
+ADDED from AndroidManifest.xml:282:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:284:13
+	android:theme
+		ADDED from AndroidManifest.xml:285:13
+	android:name
+		ADDED from AndroidManifest.xml:283:13
+activity#cn.kangeqiu.kq.activity.GroupDetailsActivity
+ADDED from AndroidManifest.xml:288:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:290:13
+	android:theme
+		ADDED from AndroidManifest.xml:291:13
+	android:name
+		ADDED from AndroidManifest.xml:289:13
+activity#cn.kangeqiu.kq.activity.GroupsActivity
+ADDED from AndroidManifest.xml:294:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:298:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:296:13
+	android:theme
+		ADDED from AndroidManifest.xml:297:13
+	android:name
+		ADDED from AndroidManifest.xml:295:13
+activity#com.nowagme.football.SeekActivity
+ADDED from AndroidManifest.xml:301:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:306:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:304:13
+	android:theme
+		ADDED from AndroidManifest.xml:305:13
+	android:name
+		ADDED from AndroidManifest.xml:302:13
+	android:includeInGlobalSearch
+		ADDED from AndroidManifest.xml:303:13
+activity#cn.kangeqiu.kq.activity.NewGroupActivity
+ADDED from AndroidManifest.xml:309:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:313:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:311:13
+	android:theme
+		ADDED from AndroidManifest.xml:312:13
+	android:name
+		ADDED from AndroidManifest.xml:310:13
+activity#cn.kangeqiu.kq.activity.ExitGroupDialog
+ADDED from AndroidManifest.xml:316:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:318:13
+	android:theme
+		ADDED from AndroidManifest.xml:319:13
+	android:name
+		ADDED from AndroidManifest.xml:317:13
+activity#cn.kangeqiu.kq.activity.GroupPickContactsActivity
+ADDED from AndroidManifest.xml:322:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:326:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:324:13
+	android:theme
+		ADDED from AndroidManifest.xml:325:13
+	android:name
+		ADDED from AndroidManifest.xml:323:13
+activity#cn.kangeqiu.kq.activity.BaiduMapActivity
+ADDED from AndroidManifest.xml:329:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:331:13
+	android:theme
+		ADDED from AndroidManifest.xml:332:13
+	android:name
+		ADDED from AndroidManifest.xml:330:13
+activity#cn.kangeqiu.kq.activity.NewFriendsMsgActivity
+ADDED from AndroidManifest.xml:336:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:338:13
+	android:theme
+		ADDED from AndroidManifest.xml:339:13
+	android:name
+		ADDED from AndroidManifest.xml:337:13
+activity#cn.kangeqiu.kq.activity.ForwardMessageActivity
+ADDED from AndroidManifest.xml:342:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:346:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:344:13
+	android:theme
+		ADDED from AndroidManifest.xml:345:13
+	android:name
+		ADDED from AndroidManifest.xml:343:13
+activity#cn.kangeqiu.kq.activity.ContextMenu
+ADDED from AndroidManifest.xml:349:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:351:13
+	android:theme
+		ADDED from AndroidManifest.xml:352:13
+	android:name
+		ADDED from AndroidManifest.xml:350:13
+activity#cn.kangeqiu.kq.activity.AlertDialog
+ADDED from AndroidManifest.xml:355:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:357:13
+	android:theme
+		ADDED from AndroidManifest.xml:358:13
+	android:name
+		ADDED from AndroidManifest.xml:356:13
+activity#cn.kangeqiu.kq.activity.ShowBigImage
+ADDED from AndroidManifest.xml:361:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:363:13
+	android:theme
+		ADDED from AndroidManifest.xml:364:13
+	android:name
+		ADDED from AndroidManifest.xml:362:13
+activity#cn.kangeqiu.kq.activity.ShowNormalFileActivity
+ADDED from AndroidManifest.xml:367:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:369:13
+	android:theme
+		ADDED from AndroidManifest.xml:370:13
+	android:name
+		ADDED from AndroidManifest.xml:368:13
+activity#cn.kangeqiu.kq.activity.BlacklistActivity
+ADDED from AndroidManifest.xml:373:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:375:13
+	android:theme
+		ADDED from AndroidManifest.xml:376:13
+	android:name
+		ADDED from AndroidManifest.xml:374:13
+activity#cn.kangeqiu.kq.activity.PublicGroupsActivity
+ADDED from AndroidManifest.xml:380:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:384:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:382:13
+	android:theme
+		ADDED from AndroidManifest.xml:383:13
+	android:name
+		ADDED from AndroidManifest.xml:381:13
+activity#cn.kangeqiu.kq.activity.VoiceCallActivity
+ADDED from AndroidManifest.xml:387:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:389:13
+	android:theme
+		ADDED from AndroidManifest.xml:390:13
+	android:name
+		ADDED from AndroidManifest.xml:388:13
+activity#cn.kangeqiu.kq.activity.VideoCallActivity
+ADDED from AndroidManifest.xml:393:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:396:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:395:13
+	android:theme
+		ADDED from AndroidManifest.xml:397:13
+	android:name
+		ADDED from AndroidManifest.xml:394:13
+activity#cn.kangeqiu.kq.activity.GroupSimpleDetailActivity
+ADDED from AndroidManifest.xml:400:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:402:13
+	android:theme
+		ADDED from AndroidManifest.xml:403:13
+	android:name
+		ADDED from AndroidManifest.xml:401:13
+activity#cn.kangeqiu.kq.activity.GroupBlacklistActivity
+ADDED from AndroidManifest.xml:406:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:408:13
+	android:theme
+		ADDED from AndroidManifest.xml:409:13
+	android:name
+		ADDED from AndroidManifest.xml:407:13
+activity#cn.kangeqiu.kq.activity.EditActivity
+ADDED from AndroidManifest.xml:411:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:415:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:413:13
+	android:theme
+		ADDED from AndroidManifest.xml:414:13
+	android:name
+		ADDED from AndroidManifest.xml:412:13
+activity#cn.kangeqiu.kq.activity.ShowVideoActivity
+ADDED from AndroidManifest.xml:417:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:421:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:419:13
+	android:theme
+		ADDED from AndroidManifest.xml:420:13
+	android:name
+		ADDED from AndroidManifest.xml:418:13
+activity#cn.kangeqiu.kq.activity.ImageGridActivity
+ADDED from AndroidManifest.xml:424:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:428:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:426:13
+	android:theme
+		ADDED from AndroidManifest.xml:427:13
+	android:name
+		ADDED from AndroidManifest.xml:425:13
+activity#cn.kangeqiu.kq.activity.RecorderVideoActivity
+ADDED from AndroidManifest.xml:430:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:434:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:432:13
+	android:theme
+		ADDED from AndroidManifest.xml:433:13
+	android:name
+		ADDED from AndroidManifest.xml:431:13
+activity#cn.kangeqiu.kq.activity.DiagnoseActivity
+ADDED from AndroidManifest.xml:437:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:441:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:439:13
+	android:theme
+		ADDED from AndroidManifest.xml:440:13
+	android:name
+		ADDED from AndroidManifest.xml:438:13
+activity#com.nowagme.football.PersonActivity
+ADDED from AndroidManifest.xml:445:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:447:13
+	android:theme
+		ADDED from AndroidManifest.xml:448:13
+	android:name
+		ADDED from AndroidManifest.xml:446:13
+activity#com.nowagme.football.TeamActivity
+ADDED from AndroidManifest.xml:452:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:454:13
+	android:theme
+		ADDED from AndroidManifest.xml:455:13
+	android:name
+		ADDED from AndroidManifest.xml:453:13
+activity#com.nowagme.football.CourtActivity
+ADDED from AndroidManifest.xml:459:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:461:13
+	android:theme
+		ADDED from AndroidManifest.xml:462:13
+	android:name
+		ADDED from AndroidManifest.xml:460:13
+activity#com.nowagme.football.SysMsgActivity
+ADDED from AndroidManifest.xml:466:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:468:13
+	android:theme
+		ADDED from AndroidManifest.xml:469:13
+	android:name
+		ADDED from AndroidManifest.xml:467:13
+activity#com.nowagme.football.TeamAcceptFightActivity
+ADDED from AndroidManifest.xml:472:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:474:13
+	android:theme
+		ADDED from AndroidManifest.xml:475:13
+	android:name
+		ADDED from AndroidManifest.xml:473:13
+activity#com.nowagme.football.TeamPlayerJoinFightActivity
+ADDED from AndroidManifest.xml:478:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:480:13
+	android:theme
+		ADDED from AndroidManifest.xml:481:13
+	android:name
+		ADDED from AndroidManifest.xml:479:13
+activity#com.nowagme.football.TeamFightScoreManagerActivity
+ADDED from AndroidManifest.xml:484:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:486:13
+	android:theme
+		ADDED from AndroidManifest.xml:487:13
+	android:name
+		ADDED from AndroidManifest.xml:485:13
+activity#com.nowagme.football.PersonalActivityActivity
+ADDED from AndroidManifest.xml:491:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:493:13
+	android:theme
+		ADDED from AndroidManifest.xml:494:13
+	android:name
+		ADDED from AndroidManifest.xml:492:13
+activity#com.nowagme.football.CreatePersonalActivityActivity
+ADDED from AndroidManifest.xml:498:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:502:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:500:13
+	android:theme
+		ADDED from AndroidManifest.xml:501:13
+	android:name
+		ADDED from AndroidManifest.xml:499:13
+activity#com.nowagme.football.CreateActivityActivity
+ADDED from AndroidManifest.xml:505:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:507:13
+	android:theme
+		ADDED from AndroidManifest.xml:508:13
+	android:name
+		ADDED from AndroidManifest.xml:506:13
+activity#com.nowagme.football.CreateActivityDateActivity
+ADDED from AndroidManifest.xml:511:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:513:13
+	android:theme
+		ADDED from AndroidManifest.xml:514:13
+	android:name
+		ADDED from AndroidManifest.xml:512:13
+activity#com.nowagme.football.SelectMapActivity
+ADDED from AndroidManifest.xml:518:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:520:13
+	android:theme
+		ADDED from AndroidManifest.xml:521:13
+	android:name
+		ADDED from AndroidManifest.xml:519:13
+activity#com.nowagme.football.TeamActivityActivity
+ADDED from AndroidManifest.xml:524:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:526:13
+	android:theme
+		ADDED from AndroidManifest.xml:527:13
+	android:name
+		ADDED from AndroidManifest.xml:525:13
+activity#com.nowagme.football.RegisterFirstActivity
+ADDED from AndroidManifest.xml:530:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:532:13
+	android:theme
+		ADDED from AndroidManifest.xml:533:13
+	android:name
+		ADDED from AndroidManifest.xml:531:13
+activity#com.nowagme.football.RegisterSecondActivity
+ADDED from AndroidManifest.xml:536:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:538:13
+	android:theme
+		ADDED from AndroidManifest.xml:539:13
+	android:name
+		ADDED from AndroidManifest.xml:537:13
+activity#com.nowagme.football.EditPersonalActivityActivity
+ADDED from AndroidManifest.xml:542:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:544:13
+	android:theme
+		ADDED from AndroidManifest.xml:545:13
+	android:name
+		ADDED from AndroidManifest.xml:543:13
+activity#com.nowagme.football.TeamActivityDetailsActivity
+ADDED from AndroidManifest.xml:548:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:550:13
+	android:theme
+		ADDED from AndroidManifest.xml:551:13
+	android:name
+		ADDED from AndroidManifest.xml:549:13
+activity#com.nowagme.football.TeamActivityPlayersActivity
+ADDED from AndroidManifest.xml:554:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:556:13
+	android:theme
+		ADDED from AndroidManifest.xml:557:13
+	android:name
+		ADDED from AndroidManifest.xml:555:13
+activity#com.king.photo.activity.ImageGridActivity
+ADDED from AndroidManifest.xml:559:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:561:13
+	android:theme
+		ADDED from AndroidManifest.xml:562:13
+	android:name
+		ADDED from AndroidManifest.xml:560:13
+activity#com.king.photo.activity.TestPicActivity
+ADDED from AndroidManifest.xml:564:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:567:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:566:13
+	android:name
+		ADDED from AndroidManifest.xml:565:13
+activity#com.king.photo.activity.PhotoActivity
+ADDED from AndroidManifest.xml:568:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:570:13
+	android:theme
+		ADDED from AndroidManifest.xml:571:13
+	android:name
+		ADDED from AndroidManifest.xml:569:13
+activity#com.king.photo.activity.AlbumActivity
+ADDED from AndroidManifest.xml:572:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:574:13
+	android:theme
+		ADDED from AndroidManifest.xml:575:13
+	android:name
+		ADDED from AndroidManifest.xml:573:13
+activity#com.king.photo.activity.MainActivity
+ADDED from AndroidManifest.xml:577:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:581:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:579:13
+	android:theme
+		ADDED from AndroidManifest.xml:580:13
+	android:name
+		ADDED from AndroidManifest.xml:578:13
+activity#com.king.photo.activity.ImageFile
+ADDED from AndroidManifest.xml:583:9
+	android:theme
+		ADDED from AndroidManifest.xml:585:13
+	android:name
+		ADDED from AndroidManifest.xml:584:13
+activity#com.king.photo.activity.ShowAllPhoto
+ADDED from AndroidManifest.xml:587:9
+	android:theme
+		ADDED from AndroidManifest.xml:589:13
+	android:name
+		ADDED from AndroidManifest.xml:588:13
+activity#com.king.photo.activity.GalleryActivity
+ADDED from AndroidManifest.xml:591:9
+	android:theme
+		ADDED from AndroidManifest.xml:593:13
+	android:name
+		ADDED from AndroidManifest.xml:592:13
+activity#com.nowagme.football.CreateCommentActivity
+ADDED from AndroidManifest.xml:597:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:601:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:599:13
+	android:theme
+		ADDED from AndroidManifest.xml:600:13
+	android:name
+		ADDED from AndroidManifest.xml:598:13
+activity#com.nowagme.football.MatchTanmuActivity
+ADDED from AndroidManifest.xml:604:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:608:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:606:13
+	android:theme
+		ADDED from AndroidManifest.xml:607:13
+	android:name
+		ADDED from AndroidManifest.xml:605:13
+activity#com.nowagme.football.MatchActivityActivity
+ADDED from AndroidManifest.xml:611:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:615:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:613:13
+	android:theme
+		ADDED from AndroidManifest.xml:614:13
+	android:name
+		ADDED from AndroidManifest.xml:612:13
+activity#com.nowagme.football.MatchCommentDetailActivity
+ADDED from AndroidManifest.xml:618:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:622:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:620:13
+	android:theme
+		ADDED from AndroidManifest.xml:621:13
+	android:name
+		ADDED from AndroidManifest.xml:619:13
+activity#com.nowagme.football.FragmentPersonActivity
+ADDED from AndroidManifest.xml:625:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:629:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:627:13
+	android:theme
+		ADDED from AndroidManifest.xml:628:13
+	android:name
+		ADDED from AndroidManifest.xml:626:13
+activity#cn.kangeqiu.kq.activity.imglist.ImgFileListActivcn.kangeqiu.kq.activity.imglist.ImgFileListActivity
+ADDED from AndroidManifest.xml:633:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:636:13
+	android:theme
+		ADDED from AndroidManifest.xml:635:13
+	android:name
+		ADDED from AndroidManifest.xml:634:13
+activity#cn.kangeqiu.kq.activity.imglist.ImgsActivity
+ADDED from AndroidManifest.xml:639:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:642:13
+	android:theme
+		ADDED from AndroidManifest.xml:641:13
+	android:name
+		ADDED from AndroidManifest.xml:640:13
+activity#com.nowagame.kq.activity.TrendsActivity
+ADDED from AndroidManifest.xml:644:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:646:13
+	android:theme
+		ADDED from AndroidManifest.xml:647:13
+	android:name
+		ADDED from AndroidManifest.xml:645:13
+receiver#com.easemob.chat.StartServiceReceiver
+ADDED from AndroidManifest.xml:650:9
+	android:name
+		ADDED from AndroidManifest.xml:650:19
+intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.QUICKBOOT_POWERON+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:651:13
+	android:priority
+		ADDED from AndroidManifest.xml:651:28
+action#android.intent.action.BOOT_COMPLETED
+ADDED from AndroidManifest.xml:652:17
+	android:name
+		ADDED from AndroidManifest.xml:652:25
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from AndroidManifest.xml:653:17
+	android:name
+		ADDED from AndroidManifest.xml:653:25
+meta-data#EASEMOB_APPKEY
+ADDED from AndroidManifest.xml:660:9
+	android:name
+		ADDED from AndroidManifest.xml:661:13
+	android:value
+		ADDED from AndroidManifest.xml:662:13
+service#com.easemob.chat.EMChatService
+ADDED from AndroidManifest.xml:664:9
+	android:name
+		ADDED from AndroidManifest.xml:664:18
+service#com.baidu.location.f
+ADDED from AndroidManifest.xml:667:9
+	android:process
+		ADDED from AndroidManifest.xml:670:13
+	android:enabled
+		ADDED from AndroidManifest.xml:669:13
+	android:name
+		ADDED from AndroidManifest.xml:668:13
+meta-data#com.baidu.lbsapi.API_KEY
+ADDED from AndroidManifest.xml:677:9
+	android:name
+		ADDED from AndroidManifest.xml:678:13
+	android:value
+		ADDED from AndroidManifest.xml:679:13
+meta-data#UMENG_APPKEY
+ADDED from AndroidManifest.xml:680:9
+	android:name
+		ADDED from AndroidManifest.xml:681:13
+	android:value
+		ADDED from AndroidManifest.xml:682:13
+meta-data#UMENG_CHANNEL
+ADDED from AndroidManifest.xml:683:9
+	android:name
+		ADDED from AndroidManifest.xml:684:13
+	android:value
+		ADDED from AndroidManifest.xml:685:13
+meta-data#TD_APP_ID
+ADDED from AndroidManifest.xml:686:9
+	android:name
+		ADDED from AndroidManifest.xml:687:13
+	android:value
+		ADDED from AndroidManifest.xml:688:13
+meta-data#TD_CHANNEL_ID
+ADDED from AndroidManifest.xml:690:9
+	android:name
+		ADDED from AndroidManifest.xml:691:13
+	android:value
+		ADDED from AndroidManifest.xml:692:13
+activity#com.umeng.socialize.view.ShareActivity
+ADDED from AndroidManifest.xml:695:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:701:13
+	android:noHistory
+		ADDED from AndroidManifest.xml:699:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:697:13
+	android:theme
+		ADDED from AndroidManifest.xml:700:13
+	android:name
+		ADDED from AndroidManifest.xml:696:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:698:13
+activity#cn.kangeqiu.kq.wxapi.WXEntryActivity
+ADDED from AndroidManifest.xml:702:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:706:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:704:13
+	android:theme
+		ADDED from AndroidManifest.xml:707:13
+	android:exported
+		ADDED from AndroidManifest.xml:705:13
+	android:name
+		ADDED from AndroidManifest.xml:703:13
+activity#com.tencent.tauth.AuthActivity
+ADDED from AndroidManifest.xml:709:9
+	android:noHistory
+		ADDED from AndroidManifest.xml:712:13
+	android:name
+		ADDED from AndroidManifest.xml:710:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:711:13
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:713:13
+action#android.intent.action.VIEW
+ADDED from AndroidManifest.xml:714:17
+	android:name
+		ADDED from AndroidManifest.xml:714:25
+category#android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:716:17
+	android:name
+		ADDED from AndroidManifest.xml:716:27
+category#android.intent.category.BROWSABLE
+ADDED from AndroidManifest.xml:717:17
+	android:name
+		ADDED from AndroidManifest.xml:717:27
+data
+ADDED from AndroidManifest.xml:719:17
+	android:scheme
+		ADDED from AndroidManifest.xml:719:23
+activity#com.tencent.connect.common.AssistActivity
+ADDED from AndroidManifest.xml:722:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:724:13
+	android:theme
+		ADDED from AndroidManifest.xml:725:13
+	android:name
+		ADDED from AndroidManifest.xml:723:13
+activity#com.nowagame.kq.activity.CreatMyHouseActivity
+ADDED from AndroidManifest.xml:727:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:731:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:729:13
+	android:theme
+		ADDED from AndroidManifest.xml:730:13
+	android:name
+		ADDED from AndroidManifest.xml:728:13
+activity#com.nowagame.kq.activity.AboutMatchActivity
+ADDED from AndroidManifest.xml:733:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:735:13
+	android:theme
+		ADDED from AndroidManifest.xml:736:13
+	android:name
+		ADDED from AndroidManifest.xml:734:13
+activity#com.nowagame.kq.activity.MyHouseActivity
+ADDED from AndroidManifest.xml:738:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:740:13
+	android:theme
+		ADDED from AndroidManifest.xml:741:13
+	android:name
+		ADDED from AndroidManifest.xml:739:13
+activity#com.nowagame.kq.activity.MyBallActivity
+ADDED from AndroidManifest.xml:743:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:745:13
+	android:theme
+		ADDED from AndroidManifest.xml:746:13
+	android:name
+		ADDED from AndroidManifest.xml:744:13
+activity#com.nowagame.kq.activity.MyActivitys
+ADDED from AndroidManifest.xml:748:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:750:13
+	android:theme
+		ADDED from AndroidManifest.xml:751:13
+	android:name
+		ADDED from AndroidManifest.xml:749:13
+activity#com.nowagame.kq.activity.MyAddfrendsActivity
+ADDED from AndroidManifest.xml:753:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:755:13
+	android:theme
+		ADDED from AndroidManifest.xml:756:13
+	android:name
+		ADDED from AndroidManifest.xml:754:13
+activity#com.nowagame.kq.activity.MypaihangActivity
+ADDED from AndroidManifest.xml:758:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:760:13
+	android:theme
+		ADDED from AndroidManifest.xml:761:13
+	android:name
+		ADDED from AndroidManifest.xml:759:13
+activity#com.nowagame.kq.activity.MyBragActivity
+ADDED from AndroidManifest.xml:763:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:765:13
+	android:theme
+		ADDED from AndroidManifest.xml:766:13
+	android:name
+		ADDED from AndroidManifest.xml:764:13
+activity#com.nowagame.kq.activity.CreatMyBragActivity
+ADDED from AndroidManifest.xml:768:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:770:13
+	android:theme
+		ADDED from AndroidManifest.xml:771:13
+	android:name
+		ADDED from AndroidManifest.xml:769:13
+activity#com.nowagame.kq.activity.HourseMemberChooseActivity
+ADDED from AndroidManifest.xml:773:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:775:13
+	android:theme
+		ADDED from AndroidManifest.xml:776:13
+	android:name
+		ADDED from AndroidManifest.xml:774:13
+activity#com.nowagame.kq.activity.BragDetailActivity
+ADDED from AndroidManifest.xml:778:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:780:13
+	android:theme
+		ADDED from AndroidManifest.xml:781:13
+	android:name
+		ADDED from AndroidManifest.xml:779:13
+activity#com.nowagame.kq.activity.BragShareActivity
+ADDED from AndroidManifest.xml:783:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:785:13
+	android:theme
+		ADDED from AndroidManifest.xml:786:13
+	android:name
+		ADDED from AndroidManifest.xml:784:13
+activity#com.nowagame.kq.activity.CreatMyGuessActivity
+ADDED from AndroidManifest.xml:788:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:790:13
+	android:theme
+		ADDED from AndroidManifest.xml:791:13
+	android:name
+		ADDED from AndroidManifest.xml:789:13
+activity#com.nowagame.kq.activity.ChooseMyGuessActivity
+ADDED from AndroidManifest.xml:793:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:797:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:795:13
+	android:theme
+		ADDED from AndroidManifest.xml:796:13
+	android:name
+		ADDED from AndroidManifest.xml:794:13
+activity#com.nowagame.kq.activity.MyGuessActivity
+ADDED from AndroidManifest.xml:799:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:801:13
+	android:theme
+		ADDED from AndroidManifest.xml:802:13
+	android:name
+		ADDED from AndroidManifest.xml:800:13
+activity#com.umeng.fb.ConversationActivity
+ADDED from AndroidManifest.xml:804:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:806:13
+	android:theme
+		ADDED from AndroidManifest.xml:807:13
+	android:name
+		ADDED from AndroidManifest.xml:805:13
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from AndroidManifest.xml:810:5
+	android:name
+		ADDED from AndroidManifest.xml:810:22

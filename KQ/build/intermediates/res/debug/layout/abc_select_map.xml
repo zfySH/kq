@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/abc_select_map__tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="地图"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/top_bar_font_size" />
+
+        <Button
+            android:id="@+id/abc_select_map__btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentLeft="true"
+            android:background="@color/top_bar_normal_bg"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/abc_select_map__btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentRight="true"
+            android:background="@color/top_bar_normal_bg"
+            android:text="保存"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/abc_fragment_address__tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/address_group"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/map_radio"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/team_account_manager_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="地图"
+                android:textColor="@color/black_deep"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/count_radio"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/team_account_manager_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="球场"
+                android:textColor="@color/black_deep"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/search_btn"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/abc_button_roundcorner_light_green"
+                android:text="搜索"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/search_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/search_btn"
+                android:background="@drawable/abc_create_roundcorner_instruction"
+                android:hint="搜索"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <ListView
+        android:id="@+id/court_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/line"
+        android:dividerHeight="2px"
+        android:visibility="gone" >
+    </ListView>
+
+</LinearLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/abc_select_map.xml -->

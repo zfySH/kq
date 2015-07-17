@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="ViewHolder" type="id"/>
+    <item name="MyselfMessage" type="id"/>
+    <item name="TeamFightTime" type="id"/>
+    <item name="CommentId" type="id"/>
+    <item name="selected_view" type="id"/>
+    <item name="iconUrl" type="id"/>
+
+</resources>

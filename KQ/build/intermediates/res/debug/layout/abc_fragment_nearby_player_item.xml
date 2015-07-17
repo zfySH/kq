@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF"
+    android:gravity="center_vertical"
+    android:padding="5dp"
+    android:paddingRight="10dp" >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/abc_face"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dip"
+        android:visibility="visible"
+        app:border_color="#FFd2d2d2"
+        app:border_width="0.8dp" />
+
+    <ImageView
+        android:id="@+id/abc_face1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dip"
+        android:src="@drawable/abc_activity_time"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/abc_fragment_nearby__listview__iv_activity_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/image_desc" />
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/creater_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:clickable="false"
+            android:src="@drawable/add_concern"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/text_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:clickable="false"
+            android:text="-60"
+            android:textColor="#F56C1C"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/concern_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:clickable="false"
+            android:src="@drawable/img_more"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/abc_fragment_nearby__listview__ll_name_and_gps_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="12dp" >
+
+            <TextView
+                android:id="@+id/abc_player_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="0dp"
+                android:singleLine="true"
+                android:text="主题"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/abc_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="0dp"
+                android:singleLine="true"
+                android:text="主题"
+                android:textColor="#959595"
+                android:textSize="14sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/abc_fragment_nearby__listview__ll_activity_creator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="0dp"
+            android:visibility="gone" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/abc_team_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip" />
+
+            <TextView
+                android:id="@+id/abc_team_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="0dp"
+                android:text="rf"
+                android:textColor="#626466"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:paddingBottom="5dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp" >
+
+    <ImageView
+        android:id="@+id/abc_fragment_nearby__listview__iv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:background="@drawable/abc_fragment_nearby__listview__iv_type0"
+        android:contentDescription="@string/image_desc"
+        android:visibility="gone" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/abc_fragment_nearby__listview__iv_faceimg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="18dip"
+        android:layout_marginRight="18dip"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/image_desc"
+        android:padding="5dp"
+        app:border_color="@android:color/transparent"
+        app:border_width="0.2dp" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/abc_fragment_nearby__listview__ll_name_and_gps"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/abc_fragment_nearby_listview__tv_name"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="000000000000000000000000000003"
+                android:textColor="#626466"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/abc_fragment_nearby__listview__btn_gps_and_time"
+                android:layout_width="wrap_content"
+                android:layout_height="22dip"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/abc_button_roundcorner_white"
+                android:clickable="false"
+                android:focusable="false"
+                android:paddingBottom="1dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="1dp"
+                android:paddingTop="5dp"
+                android:text="0.12km"
+                android:textColor="#626466"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/abc_fragment_nearby__listview__ll_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/abc_fragment_nearby__listview__btn_sex_age"
+                android:layout_width="55dip"
+                android:layout_height="25dip"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/abc_button_roundcorner_yellow"
+                android:clickable="false"
+                android:drawableLeft="@drawable/abc_sex_man"
+                android:focusable="false"
+                android:paddingBottom="1dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="1dp"
+                android:paddingTop="1dp"
+                android:text="24"
+                android:textColor="#EBF9F6"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/abc_fragment_nearby__listview__ll_middle_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/abc_fragment_nearby__listview__btn_place"
+                    android:layout_width="55dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/abc_button_roundcorner_orange"
+                    android:clickable="false"
+                    android:drawableLeft="@drawable/abc_sex_man"
+                    android:focusable="false"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="1dp"
+                    android:paddingTop="1dp"
+                    android:text="24"
+                    android:textColor="#EBF9F6"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/abc_fragment_nearby__listview__ll_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="0dp" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/abc_fragment_nearby__listview__iv_player_team_faceimg"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dip"
+                android:contentDescription="@string/image_desc" />
+
+            <TextView
+                android:id="@+id/abc_fragment_nearby__listview__iv_player_team_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:padding="8dp"
+                android:text="001"
+                android:textColor="#626466"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+-->
+<!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/abc_fragment_nearby_player_item.xml -->

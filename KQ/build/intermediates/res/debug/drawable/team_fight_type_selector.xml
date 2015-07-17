@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/team_fight_type_pressed" android:state_checked="true"></item>
+    <item android:drawable="@drawable/team_fight_type_normal" android:state_checked="false"></item>
+
+</selector><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/drawable/team_fight_type_selector.xml -->

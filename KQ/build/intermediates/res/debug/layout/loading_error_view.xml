@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loading_view_error"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/loading_view_error_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/net_error"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/loading_view_error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/length_10"
+        android:gravity="center"
+        android:paddingLeft="@dimen/length_65"
+        android:paddingRight="@dimen/length_65"
+        android:textColor="?attr/text_color_999"
+        android:textSize="@dimen/textsize_14" />
+
+    <TextView
+        android:id="@+id/loading_view_error_btn"
+        android:layout_width="@dimen/length_100"
+        android:layout_height="@dimen/length_40"
+        android:layout_marginTop="@dimen/length_60"
+        android:text="@string/chongshi"
+        android:layout_gravity="center"
+       	style="@style/main_orange_btn_style" />
+
+</LinearLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/loading_error_view.xml -->

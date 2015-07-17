@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical">
+
+  <ListView
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#DADBDA"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none"
+		/>   
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_margin="20dp"
+        android:background="#3FA22B"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="创建球队"
+        android:textColor="#EEEFEC"
+        android:textSize="15sp"
+        android:padding="5dp" 
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</LinearLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/abc_fragment_team_my_team.xml -->

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="false" android:color="#999999"></item>
+    <item android:state_enabled="true" android:color="#ffffff"></item>
+
+</selector><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/drawable/main_btn_textcolor_white.xml -->

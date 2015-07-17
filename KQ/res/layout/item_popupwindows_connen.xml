@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_transparent" >
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/abc_button_roundcorner_white1"
+        android:orientation="vertical" >
+
+        
+
+        <TextView
+            android:id="@+id/item_popupwindows_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bt_nobgd"
+            android:gravity="center"
+            android:text="确定需要取消吗？"
+            android:textColor="#121212"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/item_popupwindows_Photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bt_nobgd"
+            android:gravity="center"
+            android:text="你是否要取消关注用户？"
+            android:textColor="#585858"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="15dp"
+            android:background="#f3f3f3" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" 
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/item_popupwindows_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="取消关注"
+                android:textColor="#4ACFD8"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="46dp"
+                android:layout_toLeftOf="@+id/item_popupwindows_cancel"
+                android:background="@null"
+                android:gravity="center"
+                android:text="点错了"
+                android:textColor="#4ACFD8"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

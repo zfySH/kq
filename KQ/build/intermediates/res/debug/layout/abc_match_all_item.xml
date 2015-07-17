@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <me.maxwin.view.XListView
+        android:id="@+id/match_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#FFFFFF"
+        android:dividerHeight="0dip"
+        android:fadingEdge="none"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+</LinearLayout><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/res/layout/abc_match_all_item.xml -->

@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>
+<!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/TanmuLib/res/menu/main.xml --><!-- From: file:/Users/zhufeiyu1/Documents/studiowork/kq3/KQ/build/intermediates/exploded-aar/kq3/TanmuLib/unspecified/res/menu/main.xml -->

@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.kangeqiu.kq"
+    android:versionCode="4"
+    android:versionName="1.1.8" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <!-- ###################声明SDK使用的相关权限###################### -->
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name="com.jingyi.MiChat.application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name" >
+        <activity android:name="com.medicine.app.fragments.FragmentChangeActivity" />
+        <!-- 开屏页 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.kangeqiu.kq.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" >
+        </activity>
+
+        <!-- 登陆 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.InvitationcodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 房间邀请码 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="cn.kangeqiu.kq.activity.MessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.nowagame.kq.activity.MineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.nowagme.football.PhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.nowagme.football.HelpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.nowagme.football.Respondcomment"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 注册 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 个人详细 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.MyselfMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 个人明细 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.MyselfMessageDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 照片墙 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.MyselfPhotosActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 球队详情 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.TeamDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 球队约战 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.TeamFightActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 球队约战时间选择 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.TeamPickFightDateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 球队约战类型选择 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.TeamMatchTypeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 设置界面 -->
+        <activity
+            android:name="com.nowagme.football.SeetingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 竞猜界面 -->
+        <activity
+            android:name="com.nowagme.football.QuizActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.nowagme.football.CathecticActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 投票界面 -->
+        <activity
+            android:name="com.nowagme.football.VoteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 编辑界面 -->
+        <activity
+            android:name="com.nowagme.football.EditfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.nowagme.football.EditfileActivity1"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 创建球队 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.CreateTeamActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 编辑球队 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.EditTeamActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 创建球队标签页面 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.CreateTeamTagActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 创建球队城市页面 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.CreateTeamCityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 好友页面 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.FriendsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <!-- 设置页面 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.ConfigActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 设置比分页面 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.TeamScoreEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 比分管理页面 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.TeamScoreManagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 球队账目管理页面 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.TeamAccountActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 球队账目缴费页面 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.TeamAccountPayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 球队账目支出页面 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.TeamAccountOutPayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 球队账目明细页面 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.TeamAccountManagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 球队队徽页面 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.TeamCreatImgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 聊天页面 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.ChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- 添加好友 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.AddContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 群组详情 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.GroupDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 群组列表 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.GroupsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 查找 -->
+        <activity
+            android:name="com.nowagme.football.SeekActivity"
+            android:includeInGlobalSearch="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 新建群组 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.NewGroupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 退出群组提示框 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.ExitGroupDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" >
+        </activity>
+        <!-- 群组选人 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.GroupPickContactsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 地图 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.BaiduMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 新的朋友邀请消息页面 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.NewFriendsMsgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 转发消息用户列表页面 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.ForwardMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 自定义的contextmenu -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.ContextMenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+        <!-- 自定义的alertdialog -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.AlertDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+        <!-- 显示下载大图页面 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.ShowBigImage"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 下载文件 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.ShowNormalFileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 黑名单 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.BlacklistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 公开的群聊列表 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.PublicGroupsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 语音通话 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.VoiceCallActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/nornal_style" >
+        </activity>
+        <!-- 视频通话 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.VideoCallActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 群聊简单信息 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.GroupSimpleDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 群组黑名单用户列表 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.GroupBlacklistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="cn.kangeqiu.kq.activity.EditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateVisible" >
+        </activity>
+        <activity
+            android:name="cn.kangeqiu.kq.activity.ShowVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <!-- choose video -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.ImageGridActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="cn.kangeqiu.kq.activity.RecorderVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <!-- upload error log -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.DiagnoseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 球员的详细信息界面 -->
+        <activity
+            android:name="com.nowagme.football.PersonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 球队的详细信息界面 -->
+        <activity
+            android:name="com.nowagme.football.TeamActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 球场的详细信息界面 -->
+        <activity
+            android:name="com.nowagme.football.CourtActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 系统通知界面 -->
+        <activity
+            android:name="com.nowagme.football.SysMsgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 约战通知界面 -->
+        <activity
+            android:name="com.nowagme.football.TeamAcceptFightActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 约战报名界面 -->
+        <activity
+            android:name="com.nowagme.football.TeamPlayerJoinFightActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 比分管理界面 -->
+        <activity
+            android:name="com.nowagme.football.TeamFightScoreManagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 个人活动列表界面 -->
+        <activity
+            android:name="com.nowagme.football.PersonalActivityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 发起个人活动界面 -->
+        <activity
+            android:name="com.nowagme.football.CreatePersonalActivityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 发起活动 初始界面 -->
+        <activity
+            android:name="com.nowagme.football.CreateActivityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 发起活动 时间界面 -->
+        <activity
+            android:name="com.nowagme.football.CreateActivityDateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 选择百度地图的位置点 -->
+        <activity
+            android:name="com.nowagme.football.SelectMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 活动详情界面 -->
+        <activity
+            android:name="com.nowagme.football.TeamActivityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 注册下一步 -->
+        <activity
+            android:name="com.nowagme.football.RegisterFirstActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 注册确定 -->
+        <activity
+            android:name="com.nowagme.football.RegisterSecondActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 活动编辑界面 -->
+        <activity
+            android:name="com.nowagme.football.EditPersonalActivityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 活动详情界面 -->
+        <activity
+            android:name="com.nowagme.football.TeamActivityDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 活动报名人界面 -->
+        <activity
+            android:name="com.nowagme.football.TeamActivityPlayersActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.king.photo.activity.ImageGridActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.king.photo.activity.TestPicActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.king.photo.activity.PhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" />
+        <activity
+            android:name="com.king.photo.activity.AlbumActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.king.photo.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.king.photo.activity.ImageFile"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.king.photo.activity.ShowAllPhoto"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.king.photo.activity.GalleryActivity"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 创建评论 -->
+        <activity
+            android:name="com.nowagme.football.CreateCommentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- 弹幕界面 -->
+        <activity
+            android:name="com.nowagme.football.MatchTanmuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/transparent"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- 比赛详情界面 -->
+        <activity
+            android:name="com.nowagme.football.MatchActivityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 动态详情界面 -->
+        <activity
+            android:name="com.nowagme.football.MatchCommentDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <!-- 个人详情界面 -->
+        <activity
+            android:name="com.nowagme.football.FragmentPersonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <!-- 本地照片薄 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.imglist.ImgFileListActivcn.kangeqiu.kq.activity.imglist.ImgFileListActivity"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- 选择照片 -->
+        <activity
+            android:name="cn.kangeqiu.kq.activity.imglist.ImgsActivity"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.nowagame.kq.activity.TrendsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 开机自启动服务 -->
+        <receiver android:name="com.easemob.chat.StartServiceReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="nowagame#kq" />
+        <!-- 声明sdk所需的service -->
+        <service android:name="com.easemob.chat.EMChatService" />
+
+        <!-- 百度地图所需的service -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <!--
+             <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="IsQyrWkGRZ3aV4uBX93umaLm" />
+        -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="kFjGQhhLfR8F2cQpkdBgmm1h" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5562967c67e58e4ef1002624" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="1000" />
+        <meta-data
+            android:name="TD_APP_ID"
+            android:value="6B43362423D733A0B5B72976FEC6E774" >
+        </meta-data>
+        <meta-data
+            android:name="TD_CHANNEL_ID"
+            android:value="1000" >
+        </meta-data>
+
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID -->
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.nowagame.kq.activity.CreatMyHouseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.nowagame.kq.activity.AboutMatchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.nowagame.kq.activity.MyHouseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.nowagame.kq.activity.MyBallActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.nowagame.kq.activity.MyActivitys"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.nowagame.kq.activity.MyAddfrendsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.nowagame.kq.activity.MypaihangActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.nowagame.kq.activity.MyBragActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.nowagame.kq.activity.CreatMyBragActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.nowagame.kq.activity.HourseMemberChooseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.nowagame.kq.activity.BragDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.nowagame.kq.activity.BragShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.nowagame.kq.activity.CreatMyGuessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.nowagame.kq.activity.ChooseMyGuessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.nowagame.kq.activity.MyGuessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.umeng.fb.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" />
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+</manifest>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="mode">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="viewAbove" format="reference" />
+        <attr name="viewBehind" format="reference" />
+        <attr name="behindOffset" format="dimension" />
+        <attr name="behindWidth" format="dimension" />
+        <attr name="behindScrollScale" format="float" />
+        <attr name="touchModeAbove">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+        </attr>
+        <attr name="shadowDrawable" format="reference" />
+        <attr name="shadowWidth" format="dimension" />
+        <attr name="behindFadeEnabled" format="boolean" />
+        <attr name="behindFadeDegree" format="float" />
+        <attr name="selectorEnabled" format="boolean" />
+        <attr name="selectorDrawable" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="RoundedImageView">
+        <attr name="riv_corner_radius" format="dimension" />
+        <attr name="riv_border_width" format="dimension" />
+        <attr name="riv_border_color" format="color" />
+        <attr name="riv_mutate_background" format="boolean" />
+        <attr name="riv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+        <attr name="riv_tile_mode">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_x">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_y">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="emojiconSize" format="dimension" />
+        <attr name="emojiconTextStart" format="integer" />
+        <attr name="emojiconTextLength" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <attr name="fontPath" format="string" />
+    <!-- 主界面/通用定义 -->
+    <attr name="activity_bg" format="reference|color" />
+    <!-- activity_bg_02是针对有些activity底色是 #e6e6e6 -->
+    <attr name="activity_bg_02" format="reference|color" />
+    <attr name="bottom_nav_background" format="reference|color" />
+    <attr name="top_nav_background" format="reference|color" />
+    <attr name="text_color_fff" format="reference|color" />
+    <attr name="text_color_333" format="reference|color" />
+    <attr name="text_color_666" format="reference|color" />
+    <attr name="text_color_000" format="reference|color" />
+    <attr name="text_color_999" format="reference|color" />
+    <attr name="text_color_656666" format="reference|color" />
+    <attr name="text_color_cb0b3e" format="reference|color" />
+    <attr name="text_color_e15642" format="reference|color" />
+    <attr name="split_line_color_c5c5c5" format="reference|color" />
+    <attr name="split_line_color_dcdcdc" format="reference|color" />
+    <attr name="split_line_color_dadada" format="reference|color" />
+    <attr name="qd_backtextview_color" format="reference|color" />
+    <attr name="qd_v5_item_shape_selector" format="reference|color" />
+    <attr name="qd_text_color_new_add_one" format="reference|color" />
+    <attr name="qd_dialog_bg" format="reference|color" />
+    <attr name="qd_button_grey_selector" format="reference|color" />
+    <attr name="qd_icon_bg_selector" format="reference|color" />
+    <attr name="qd_list_bg_selector" format="reference|color" />
+    <attr name="qd_buylist_bg_selector" format="reference|color" />
+    <attr name="qd_top_nav_right_button" format="reference|color" />
+    <attr name="qd_icon_bg" format="reference|color" />
+    <attr name="qd_horizontal_splitline_01_color" format="reference|color" />
+    <attr name="qd_bookstore_recommend_category_bg" format="reference|color" />
+    <attr name="qd_login_edit_text_color" format="reference|color" />
+    <attr name="qd_main_text" format="reference|color" />
+    <attr name="qd_bookstore_channel_list_item_child_bg" format="reference|color" />
+    <attr name="qd_bookstore_channel_list_item_child_count" format="reference|color" />
+    <attr name="qd_bookstore_category_item_bg_bottom" format="reference|color" />
+    <attr name="qd_normal_red" format="reference|color" />
+    <attr name="qd_title_tip_layout_bg" format="reference|color" />
+    <!-- 书架定义 -->
+    <attr name="qd_button_textview_bg_grey_selector" format="reference|color" />
+    <attr name="qd_guidereadingview_bg" format="reference|color" />
+
+    <!-- 阅读引擎定义 -->
+    <attr name="qd_bookdirectory_tab_bg" format="reference|color" />
+    <attr name="qd_bookdirectory_tab_text_color" format="reference|color" />
+    <attr name="qd_bookdirectory_list_item_bg" format="reference|color" />
+    <attr name="qd_bookdirectory_list_group_bg" format="reference|color" />
+    <attr name="qd_bookdirectory_list_group_color" format="reference|color" />
+    <attr name="qd_bookdirectory_list_item_chaptername_color" format="reference|color" />
+    <attr name="qd_bookdirectory_list_item_updatetime_color" format="reference|color" />
+    <attr name="qd_bookdirectory_list_item_line_color" format="reference|color" />
+    <attr name="qd_bookdirectory_list_group_line_color" format="reference|color" />
+    <attr name="qd_bookdirectory_tab_line_color" format="reference|color" />
+    <attr name="qd_charge_split_color" format="reference|color" />
+    <attr name="qd_text_color_new_add_three" format="reference|color" />
+    <attr name="qd_main_bottom_button_selector" format="reference|color" />
+    <attr name="qd_main_bottom_button_selector_bg" format="reference|color" />
+    <attr name="qd_main_bottom_button_selector_text" format="reference|color" />
+    <attr name="qd_main_bottom_button_selector_split" format="reference|color" />
+    <attr name="qd_bookmark_chapter_name_color" format="reference|color" />
+    <attr name="qd_bookmark_chapter_desc_color" format="reference|color" />
+    <attr name="qd_bookmark_chapter_other_color" format="reference|color" />
+    <attr name="qd_loading_bg" format="reference|color" />
+    <attr name="qd_loading_text_color" format="reference|color" />
+
+    <!-- 书库定义 -->
+    <attr name="qd_listview_item_hui_bg" format="reference|color" />
+    <attr name="qd_bookstore_complete_list_foot_more_bg" format="reference|color" />
+    <attr name="qd_bookstore_add_book_bg" format="reference|color" />
+    <attr name="qd_bookstore_recommend_head_bg" format="reference|color" />
+    <attr name="qd_bookstore_recommend_head_diveder" format="reference|color" />
+    <attr name="qd_listview_item_divider_bg_public" format="reference|color" />
+    <attr name="qd_listview_item_group_title" format="reference|color" />
+    <attr name="qd_listview_item_group_item" format="reference|color" />
+    <attr name="qd_login_top_text_color" format="reference|color" />
+    <attr name="qd_bookstore_recommend_foot_text_color" format="reference|color" />
+    <attr name="qd_bookstore_recommend_gridview_bg" format="reference|color" />
+    <attr name="qd_bookstore_recommend_xianmian_item_bg" format="reference|color" />
+    <attr name="qd_bookstore_freelimit_list_divider_color" format="reference|color" />
+    <attr name="qd_listview_item_content_bg_public" format="reference|color" />
+    <attr name="qd_bookstore_channel_headbutton_bg" format="reference|color" />
+    <attr name="qd_blur_bg_color" format="reference|color" />
+    <attr name="qd_bookstore_head_bg" format="reference|color" />
+    <attr name="qd_bookstore_direction_right_color" format="reference|color" />
+    <attr name="qd_top_nav_backfround" format="reference|color" />
+    <attr name="qd_found_bg_search" format="reference|color" />
+    <attr name="qd_found_bg_headview_8" format="reference|color" />
+    <attr name="qd_findview_top_icon_1" format="reference|color" />
+    <attr name="qd_findview_top_icon_2" format="reference|color" />
+    <attr name="qd_findview_top_icon_3" format="reference|color" />
+    <attr name="qd_findview_top_icon_4" format="reference|color" />
+    <attr name="qd_findview_top_icon_5" format="reference|color" />
+    <attr name="qd_findview_top_icon_6" format="reference|color" />
+    <attr name="qd_findview_top_icon_7" format="reference|color" />
+    <attr name="qd_findview_top_icon_8" format="reference|color" />
+    <attr name="qd_ranking_right_listview_item" format="reference|color" />
+
+    <!-- 书详情/末页定义 -->
+    <attr name="qd_gallery_item_bg_public" format="reference|color" />
+
+    <!-- 账户/任务/积分墙定义 -->
+    <attr name="qd_walloffer_dragable_textview_bg" format="reference|color" />
+    <attr name="qd_walloffer_dragable_textview_textcolor" format="reference|color" />
+    <attr name="qd_walloffer_topbar_bg" format="reference|color" />
+    <attr name="walloffer_list_divider_color" format="reference|color" />
+    <attr name="walloffer_topbar_textcolor" format="reference|color" />
+    <attr name="walloffer_app_description_textcolor" format="reference|color" />
+    <attr name="walloffer_app_download_size_textcolor" format="reference|color" />
+    <attr name="navigation_top_icon_bg" format="reference|color" />
+
+    <!-- 登录/注册定义 -->
+    <attr name="qd_text_color_black_to_white" format="reference|color" />
+    <attr name="qd_login_edit_bg" format="reference|color" />
+
+    <!-- 充值定义 -->
+    <attr name="qd_charge_list_item_selector" format="reference|color" />
+    <attr name="qd_charge_layout_bg" format="reference|color" />
+    <attr name="qd_charge_last_charge_bg" format="reference|color" />
+    <attr name="qd_charge_last_charge_bg_pic" format="reference|color" />
+    <attr name="qd_charge_main_text_color" format="reference|color" />
+    <attr name="qd_charge_edittext_bg" format="reference|color" />
+    <attr name="qd_charge_title_main_text_color" format="reference|color" />
+    <attr name="qd_charge_info_text_color" format="reference|color" />
+    <attr name="qd_charge_line_color" format="reference|color" />
+
+    <!-- 购买定义 -->
+    <attr name="qd_bookstore_icon_tejia" format="reference|color" />
+    <attr name="qd_bookstore_icon_xianmian" format="reference|color" />
+    <attr name="qd_tip_bg" format="reference|color" />
+
+    <!-- 消息 -->
+    <attr name="qd_msg_center_bottom_bg" format="reference|color" />
+    <attr name="qd_msg_feedback_saybox_bg" format="reference|color" />
+    <attr name="qd_msg_bookstore_divider_bg" format="reference|color" />
+    <attr name="qd_msg_bg_in" format="reference|color" />
+    <attr name="qd_msg_button_bg" format="reference|color" />
+    <attr name="qd_msg_bg_out" format="reference|color" />
+    <attr name="qd_msg_list_bg" format="reference|color" />
+    <attr name="qd_msg_common_problerm_bg" format="reference|color" />
+
+    <!-- 每日导读 -->
+    <attr name="qd_dailyreading_btn_bg" format="reference|color" />
+    <attr name="qd_listview_foot_more_bg" format="reference|color" />
+    <attr name="qd_listview_divider_line" format="reference|color" />
+    <attr name="qd_listview_item_content_bg" format="reference|color" />
+    <attr name="qd_bookname" format="reference|color" />
+    <attr name="qd_author" format="reference|color" />
+    <attr name="qd_btn_green_textcolor" format="reference|color" />
+    <attr name="qd_shuhuang_item_btn_bg" format="reference|color" />
+    <!-- 更多设置 -->
+    <attr name="qd_more_activity_item_bg" format="reference|color" />
+    <attr name="qd_more_activity_item_two_bg" format="reference|color" />
+    <attr name="qd_more_activity_item_name_txt_color" format="reference|color" />
+
+    <!-- 评论互动 -->
+    <attr name="qd_interaction_comment_header_count_left" format="reference|color" />
+    <attr name="qd_interaction_add_cut_bg" format="reference|color" />
+    <attr name="qd_interaction_add_cut_num_bg" format="reference|color" />
+    <attr name="qd_interaction_edit_bg" format="reference|color" />
+    <attr name="qd_interaction_center_bg" format="reference|color" />
+    <attr name="qd_interaction_comment_item_top" format="reference|color" />
+    <attr name="qd_interaction_dialog_bg" format="reference|color" />
+    <attr name="qd_interaction_pop_bg" format="reference|color" />
+    <attr name="qd_interaction_pop_divider" format="reference|color" />
+    <attr name="qd_more_activity_item_describe_txt_color" format="reference|color" />
+    <attr name="qd_point_conversion_edit_back" format="reference|color" />
+    <attr name="qd_v5_model_center_bg_one" format="reference|color" />
+    <attr name="qd_v5_model_bottom_bg_one" format="reference|color" />
+
+    <!-- 阅读页，阅读进度 -->
+    <attr name="qd_bookmark_pop_bg" format="reference|color" />
+
+    <!-- 广告 -->
+    <attr name="qd_ad_bg" format="reference|color" />
+
+    <!-- 搜索 筛选 -->
+    <attr name="qd_search_keyword_edit_bg" format="reference|color" />
+    <attr name="qd_search_group_title_bg" format="reference|color" />
+
+    <!-- 签到 -->
+    <attr name="qd_badge_show" format="reference|color" />
+    <attr name="qd_badge_btn_bg" format="reference|color" />
+    <attr name="qd_usercenter_taskcenter_calender_text_color" format="reference|color" />
+    <attr name="qd_usercenter_taskcenter_calender_bg" format="reference|color" />
+
+    <declare-styleable name="ExpandablePanel">
+        <attr name="maxCollapsedLines" format="integer" />
+        <attr name="animDuration" format="integer" />
+        <attr name="animAlphaStart" format="float" />
+        <attr name="expandDrawable" format="reference" />
+        <attr name="collapseDrawable" format="reference" />
+    </declare-styleable>
+
+</resources>
